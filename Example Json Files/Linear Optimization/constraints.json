@@ -1,0 +1,22 @@
+[
+        {
+            "type": "le",
+            "expression": "x + y",
+            "value": 12
+        },
+        {
+            "type": "le",
+            "expression": "2 * x + y",
+            "value": 16
+        },
+        {
+            "type": "ge",
+            "expression": "x",
+            "value": 0
+        },
+        {
+            "type": "ge",
+            "expression": "y",
+            "value": 0
+        }
+    ]
