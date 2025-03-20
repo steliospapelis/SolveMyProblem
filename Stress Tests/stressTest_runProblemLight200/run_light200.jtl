@@ -1,0 +1,601 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1727106462558,194,Login,200,OK,Thread Group 1-1,text,true,,552,224,8,8,http://localhost:3001/login,152,0,2
+1727106462583,170,Login,200,OK,Thread Group 1-2,text,true,,556,224,8,8,http://localhost:3001/login,132,0,1
+1727106462609,145,Login,200,OK,Thread Group 1-3,text,true,,552,224,8,8,http://localhost:3001/login,111,0,1
+1727106462636,127,Login,200,OK,Thread Group 1-4,text,true,,554,224,9,9,http://localhost:3001/login,95,0,1
+1727106462659,137,Login,200,OK,Thread Group 1-5,text,true,,556,224,10,10,http://localhost:3001/login,127,0,1
+1727106462683,118,Login,200,OK,Thread Group 1-6,text,true,,558,224,10,10,http://localhost:3001/login,108,0,1
+1727106462709,124,Login,200,OK,Thread Group 1-7,text,true,,554,224,11,11,http://localhost:3001/login,118,0,1
+1727106462735,119,Login,200,OK,Thread Group 1-8,text,true,,552,224,12,12,http://localhost:3001/login,110,0,0
+1727106462759,122,Login,200,OK,Thread Group 1-9,text,true,,552,224,13,13,http://localhost:3001/login,113,0,1
+1727106462783,117,Login,200,OK,Thread Group 1-10,text,true,,552,224,14,14,http://localhost:3001/login,106,0,1
+1727106462808,125,Login,200,OK,Thread Group 1-11,text,true,,556,224,15,15,http://localhost:3001/login,111,0,1
+1727106462835,123,Login,200,OK,Thread Group 1-12,text,true,,556,224,16,16,http://localhost:3001/login,106,0,1
+1727106462860,125,Login,200,OK,Thread Group 1-13,text,true,,554,224,17,17,http://localhost:3001/login,116,0,1
+1727106462888,136,Login,200,OK,Thread Group 1-14,text,true,,556,224,19,19,http://localhost:3001/login,119,0,1
+1727106462911,143,Login,200,OK,Thread Group 1-15,text,true,,558,224,20,20,http://localhost:3001/login,122,0,1
+1727106462939,143,Login,200,OK,Thread Group 1-16,text,true,,552,224,21,21,http://localhost:3001/login,118,0,1
+1727106462962,153,Login,200,OK,Thread Group 1-17,text,true,,554,224,23,23,http://localhost:3001/login,139,0,1
+1727106462988,199,Login,200,OK,Thread Group 1-18,text,true,,554,224,25,25,http://localhost:3001/login,163,0,1
+1727106463012,186,Login,200,OK,Thread Group 1-19,text,true,,554,224,26,26,http://localhost:3001/login,144,0,0
+1727106463037,201,Login,200,OK,Thread Group 1-20,text,true,,552,224,27,27,http://localhost:3001/login,182,0,1
+1727106463114,138,Login,200,OK,Thread Group 1-23,text,true,,552,224,28,28,http://localhost:3001/login,116,0,1
+1727106463063,205,Login,200,OK,Thread Group 1-21,text,true,,552,224,29,29,http://localhost:3001/login,187,0,1
+1727106463091,184,Login,200,OK,Thread Group 1-22,text,true,,556,224,29,29,http://localhost:3001/login,171,0,1
+1727106463140,182,Login,200,OK,Thread Group 1-24,text,true,,558,224,31,31,http://localhost:3001/login,164,0,1
+1727106463165,170,Login,200,OK,Thread Group 1-25,text,true,,554,224,31,31,http://localhost:3001/login,156,0,0
+1727106462754,613,run problem,200,OK,Thread Group 1-3,text,true,,277,383,32,32,http://localhost:3001/runSolver/3,613,0,0
+1727106463367,0,Debug Sampler,200,OK,Thread Group 1-3,text,true,,470,0,32,32,null,0,0,0
+1727106463190,189,Login,200,OK,Thread Group 1-26,text,true,,552,224,32,32,http://localhost:3001/login,163,0,0
+1727106463215,171,Login,200,OK,Thread Group 1-27,text,true,,554,224,32,32,http://localhost:3001/login,144,0,0
+1727106462754,635,run problem,200,OK,Thread Group 1-2,text,true,,277,383,32,32,http://localhost:3001/runSolver/2,635,0,0
+1727106463389,0,Debug Sampler,200,OK,Thread Group 1-2,text,true,,470,0,32,32,null,0,0,0
+1727106462752,654,run problem,200,OK,Thread Group 1-1,text,true,,277,383,32,32,http://localhost:3001/runSolver/1,654,0,0
+1727106463406,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,470,0,32,32,null,0,0,0
+1727106463240,185,Login,200,OK,Thread Group 1-28,text,true,,560,224,32,32,http://localhost:3001/login,165,0,1
+1727106463267,168,Login,200,OK,Thread Group 1-29,text,true,,554,224,32,32,http://localhost:3001/login,157,0,1
+1727106462763,675,run problem,200,OK,Thread Group 1-4,text,true,,277,383,32,32,http://localhost:3001/runSolver/4,675,0,0
+1727106463438,1,Debug Sampler,200,OK,Thread Group 1-4,text,true,,470,0,32,32,null,0,0,0
+1727106462801,642,run problem,200,OK,Thread Group 1-6,text,true,,277,383,31,31,http://localhost:3001/runSolver/6,642,0,0
+1727106463443,1,Debug Sampler,200,OK,Thread Group 1-6,text,true,,470,0,31,31,null,0,0,0
+1727106462796,665,run problem,200,OK,Thread Group 1-5,text,true,,277,383,31,31,http://localhost:3001/runSolver/5,665,0,0
+1727106463461,0,Debug Sampler,200,OK,Thread Group 1-5,text,true,,470,0,31,31,null,0,0,0
+1727106462854,608,run problem,200,OK,Thread Group 1-8,text,true,,277,383,30,30,http://localhost:3001/runSolver/8,608,0,0
+1727106463462,0,Debug Sampler,200,OK,Thread Group 1-8,text,true,,470,0,30,30,null,0,0,0
+1727106462882,582,run problem,200,OK,Thread Group 1-9,text,true,,277,383,29,29,http://localhost:3001/runSolver/9,582,0,0
+1727106463464,1,Debug Sampler,200,OK,Thread Group 1-9,text,true,,470,0,29,29,null,0,0,0
+1727106463316,149,Login,200,OK,Thread Group 1-31,text,true,,554,224,28,28,http://localhost:3001/login,134,0,1
+1727106463290,180,Login,200,OK,Thread Group 1-30,text,true,,554,224,28,28,http://localhost:3001/login,164,0,1
+1727106462834,655,run problem,200,OK,Thread Group 1-7,text,true,,277,383,29,29,http://localhost:3001/runSolver/7,655,0,0
+1727106463489,0,Debug Sampler,200,OK,Thread Group 1-7,text,true,,470,0,29,29,null,0,0,0
+1727106462901,591,run problem,200,OK,Thread Group 1-10,text,true,,277,384,28,28,http://localhost:3001/runSolver/10,591,0,0
+1727106463492,0,Debug Sampler,200,OK,Thread Group 1-10,text,true,,471,0,28,28,null,0,0,0
+1727106463341,168,Login,200,OK,Thread Group 1-32,text,true,,552,224,28,28,http://localhost:3001/login,155,0,1
+1727106463371,144,Login,200,OK,Thread Group 1-33,text,true,,552,224,28,28,http://localhost:3001/login,138,0,1
+1727106463406,129,Login,200,OK,Thread Group 1-34,text,true,,554,224,29,29,http://localhost:3001/login,118,0,1
+1727106463421,121,Login,200,OK,Thread Group 1-35,text,true,,562,224,29,29,http://localhost:3001/login,114,0,1
+1727106463024,553,run problem,200,OK,Thread Group 1-14,text,true,,277,384,31,31,http://localhost:3001/runSolver/14,553,0,0
+1727106463577,0,Debug Sampler,200,OK,Thread Group 1-14,text,true,,471,0,31,31,null,0,0,0
+1727106463448,134,Login,200,OK,Thread Group 1-36,text,true,,556,224,30,30,http://localhost:3001/login,122,0,1
+1727106463472,120,Login,200,OK,Thread Group 1-37,text,true,,558,224,30,30,http://localhost:3001/login,103,0,0
+1727106462934,651,run problem,200,OK,Thread Group 1-11,text,true,,277,384,30,30,http://localhost:3001/runSolver/11,651,0,0
+1727106463604,0,Debug Sampler,200,OK,Thread Group 1-11,text,true,,471,0,31,31,null,0,0,0
+1727106462985,646,run problem,200,OK,Thread Group 1-13,text,true,,277,384,31,31,http://localhost:3001/runSolver/13,646,0,0
+1727106463496,121,Login,200,OK,Thread Group 1-38,text,true,,552,224,30,30,http://localhost:3001/login,107,0,1
+1727106463640,0,Debug Sampler,200,OK,Thread Group 1-13,text,true,,470,0,31,31,null,0,0,0
+1727106463522,121,Login,200,OK,Thread Group 1-39,text,true,,552,224,30,30,http://localhost:3001/login,101,0,1
+1727106463054,612,run problem,200,OK,Thread Group 1-15,text,true,,277,384,31,31,http://localhost:3001/runSolver/15,612,0,0
+1727106462958,709,run problem,200,OK,Thread Group 1-12,text,true,,277,384,31,31,http://localhost:3001/runSolver/12,709,0,0
+1727106463547,129,Login,200,OK,Thread Group 1-40,text,true,,552,224,32,32,http://localhost:3001/login,117,0,1
+1727106463667,0,Debug Sampler,200,OK,Thread Group 1-12,text,true,,471,0,31,31,null,0,0,0
+1727106463666,0,Debug Sampler,200,OK,Thread Group 1-15,text,true,,471,0,31,31,null,0,0,0
+1727106463572,125,Login,200,OK,Thread Group 1-41,text,true,,552,224,31,31,http://localhost:3001/login,112,0,1
+1727106463595,123,Login,200,OK,Thread Group 1-42,text,true,,554,224,31,31,http://localhost:3001/login,107,0,1
+1727106463087,645,run problem,200,OK,Thread Group 1-16,text,true,,277,384,32,32,http://localhost:3001/runSolver/16,645,0,0
+1727106463732,0,Debug Sampler,200,OK,Thread Group 1-16,text,true,,470,0,32,32,null,0,0,0
+1727106463621,150,Login,200,OK,Thread Group 1-43,text,true,,554,224,32,32,http://localhost:3001/login,142,0,1
+1727106463647,155,Login,200,OK,Thread Group 1-44,text,true,,554,224,34,34,http://localhost:3001/login,143,0,1
+1727106463675,132,Login,200,OK,Thread Group 1-45,text,true,,558,224,34,34,http://localhost:3001/login,115,0,1
+1727106463695,176,Login,200,OK,Thread Group 1-46,text,true,,556,224,37,37,http://localhost:3001/login,142,0,2
+1727106463126,745,run problem,200,OK,Thread Group 1-17,text,true,,277,384,37,37,http://localhost:3001/runSolver/17,745,0,0
+1727106463872,0,Debug Sampler,200,OK,Thread Group 1-17,text,true,,471,0,37,37,null,0,0,0
+1727106463723,204,Login,200,OK,Thread Group 1-47,text,true,,554,224,38,38,http://localhost:3001/login,127,0,1
+1727106463744,197,Login,200,OK,Thread Group 1-48,text,true,,552,224,39,39,http://localhost:3001/login,171,0,1
+1727106463796,188,Login,200,OK,Thread Group 1-50,text,true,,558,224,40,40,http://localhost:3001/login,152,0,1
+1727106463778,209,Login,200,OK,Thread Group 1-49,text,true,,556,224,40,40,http://localhost:3001/login,149,0,0
+1727106463820,174,Login,200,OK,Thread Group 1-51,text,true,,556,224,41,41,http://localhost:3001/login,134,0,1
+1727106463187,814,run problem,200,OK,Thread Group 1-18,text,true,,277,384,41,41,http://localhost:3001/runSolver/18,814,0,0
+1727106464001,0,Debug Sampler,200,OK,Thread Group 1-18,text,true,,471,0,41,41,null,0,0,0
+1727106463198,810,run problem,200,OK,Thread Group 1-19,text,true,,277,384,40,40,http://localhost:3001/runSolver/19,810,0,0
+1727106464008,0,Debug Sampler,200,OK,Thread Group 1-19,text,true,,471,0,40,40,null,0,0,0
+1727106463268,776,run problem,200,OK,Thread Group 1-21,text,true,,277,384,41,41,http://localhost:3001/runSolver/22,776,0,0
+1727106464044,0,Debug Sampler,200,OK,Thread Group 1-21,text,true,,471,0,41,41,null,0,0,0
+1727106463238,831,run problem,200,OK,Thread Group 1-20,text,true,,277,384,41,41,http://localhost:3001/runSolver/20,831,0,0
+1727106464069,0,Debug Sampler,200,OK,Thread Group 1-20,text,true,,470,0,41,41,null,0,0,0
+1727106463252,832,run problem,200,OK,Thread Group 1-23,text,true,,277,384,40,40,http://localhost:3001/runSolver/21,832,0,0
+1727106464084,0,Debug Sampler,200,OK,Thread Group 1-23,text,true,,471,0,40,40,null,0,0,0
+1727106463844,252,Login,200,OK,Thread Group 1-52,text,true,,556,224,40,40,http://localhost:3001/login,232,0,1
+1727106463869,234,Login,200,OK,Thread Group 1-53,text,true,,554,224,40,40,http://localhost:3001/login,212,0,1
+1727106463891,217,Login,200,OK,Thread Group 1-54,text,true,,560,224,40,40,http://localhost:3001/login,205,0,1
+1727106463276,856,run problem,200,OK,Thread Group 1-22,text,true,,277,384,41,41,http://localhost:3001/runSolver/23,856,0,0
+1727106464132,0,Debug Sampler,200,OK,Thread Group 1-22,text,true,,471,0,41,41,null,0,0,0
+1727106463921,212,Login,200,OK,Thread Group 1-55,text,true,,552,224,40,40,http://localhost:3001/login,199,0,5
+1727106463969,193,Login,200,OK,Thread Group 1-57,text,true,,558,224,41,41,http://localhost:3001/login,175,0,1
+1727106463940,220,Login,200,OK,Thread Group 1-56,text,true,,552,224,41,41,http://localhost:3001/login,210,0,1
+1727106463335,850,run problem,200,OK,Thread Group 1-25,text,true,,277,384,42,42,http://localhost:3001/runSolver/25,850,0,0
+1727106464185,0,Debug Sampler,200,OK,Thread Group 1-25,text,true,,471,0,42,42,null,0,0,0
+1727106463989,207,Login,200,OK,Thread Group 1-58,text,true,,552,224,42,42,http://localhost:3001/login,187,0,1
+1727106463323,881,run problem,200,OK,Thread Group 1-24,text,true,,277,384,42,42,http://localhost:3001/runSolver/24,881,0,0
+1727106464014,203,Login,200,OK,Thread Group 1-59,text,true,,552,224,43,43,http://localhost:3001/login,194,0,1
+1727106464204,0,Debug Sampler,200,OK,Thread Group 1-24,text,true,,470,0,42,42,null,0,0,0
+1727106463386,839,run problem,200,OK,Thread Group 1-27,text,true,,277,384,42,42,http://localhost:3001/runSolver/27,839,0,0
+1727106464225,0,Debug Sampler,200,OK,Thread Group 1-27,text,true,,471,0,42,42,null,0,0,0
+1727106464069,178,Login,200,OK,Thread Group 1-61,text,true,,554,224,42,42,http://localhost:3001/login,168,0,0
+1727106464041,229,Login,200,OK,Thread Group 1-60,text,true,,552,224,43,43,http://localhost:3001/login,204,0,2
+1727106464090,196,Login,200,OK,Thread Group 1-62,text,true,,560,224,43,43,http://localhost:3001/login,168,0,1
+1727106463435,858,run problem,200,OK,Thread Group 1-29,text,true,,277,384,44,44,http://localhost:3001/runSolver/29,858,0,0
+1727106464293,0,Debug Sampler,200,OK,Thread Group 1-29,text,true,,471,0,44,44,null,0,0,0
+1727106464115,190,Login,200,OK,Thread Group 1-63,text,true,,558,224,43,43,http://localhost:3001/login,162,0,0
+1727106464164,184,Login,200,OK,Thread Group 1-65,text,true,,554,224,45,45,http://localhost:3001/login,166,0,1
+1727106464140,233,Login,200,OK,Thread Group 1-64,text,true,,556,224,46,46,http://localhost:3001/login,195,0,0
+1727106464189,188,Login,200,OK,Thread Group 1-66,text,true,,560,224,46,46,http://localhost:3001/login,153,0,1
+1727106464214,194,Login,200,OK,Thread Group 1-67,text,true,,558,224,47,47,http://localhost:3001/login,171,0,1
+1727106463379,1042,run problem,200,OK,Thread Group 1-26,text,true,,277,384,48,48,http://localhost:3001/runSolver/26,1042,0,0
+1727106464421,0,Debug Sampler,200,OK,Thread Group 1-26,text,true,,471,0,48,48,null,0,0,0
+1727106463425,1000,run problem,200,OK,Thread Group 1-28,text,true,,277,384,47,47,http://localhost:3001/runSolver/28,1000,0,0
+1727106464425,0,Debug Sampler,200,OK,Thread Group 1-28,text,true,,471,0,47,47,null,0,0,0
+1727106464264,199,Login,200,OK,Thread Group 1-69,text,true,,552,224,48,48,http://localhost:3001/login,178,0,1
+1727106464288,188,Login,200,OK,Thread Group 1-70,text,true,,554,224,48,48,http://localhost:3001/login,165,0,1
+1727106464233,254,Login,200,OK,Thread Group 1-68,text,true,,558,224,49,49,http://localhost:3001/login,234,0,1
+1727106464315,190,Login,200,OK,Thread Group 1-71,text,true,,554,224,49,49,http://localhost:3001/login,171,0,1
+1727106463535,971,run problem,200,OK,Thread Group 1-34,text,true,,277,384,49,49,http://localhost:3001/runSolver/34,971,0,0
+1727106464506,0,Debug Sampler,200,OK,Thread Group 1-34,text,true,,471,0,49,49,null,0,0,0
+1727106463516,995,run problem,200,OK,Thread Group 1-33,text,true,,277,384,49,49,http://localhost:3001/runSolver/33,995,0,0
+1727106464511,0,Debug Sampler,200,OK,Thread Group 1-33,text,true,,471,0,49,49,null,0,0,0
+1727106463509,1032,run problem,200,OK,Thread Group 1-32,text,true,,277,384,49,49,http://localhost:3001/runSolver/32,1032,0,0
+1727106464542,0,Debug Sampler,200,OK,Thread Group 1-32,text,true,,471,0,49,49,null,0,0,0
+1727106464337,221,Login,200,OK,Thread Group 1-72,text,true,,552,224,49,49,http://localhost:3001/login,204,0,1
+1727106463470,1090,run problem,200,OK,Thread Group 1-30,text,true,,277,384,49,49,http://localhost:3001/runSolver/31,1090,0,0
+1727106464561,0,Debug Sampler,200,OK,Thread Group 1-30,text,true,,471,0,49,49,null,0,0,0
+1727106464386,175,Login,200,OK,Thread Group 1-74,text,true,,552,224,48,48,http://localhost:3001/login,157,0,2
+1727106463465,1109,run problem,200,OK,Thread Group 1-31,text,true,,277,384,48,48,http://localhost:3001/runSolver/30,1109,0,0
+1727106464575,0,Debug Sampler,200,OK,Thread Group 1-31,text,true,,470,0,48,48,null,0,0,0
+1727106464363,218,Login,200,OK,Thread Group 1-73,text,true,,556,224,47,47,http://localhost:3001/login,194,0,1
+1727106464412,186,Login,200,OK,Thread Group 1-75,text,true,,552,224,48,48,http://localhost:3001/login,169,0,0
+1727106463542,1073,run problem,200,OK,Thread Group 1-35,text,true,,277,384,49,49,http://localhost:3001/runSolver/35,1073,0,0
+1727106464618,0,Debug Sampler,200,OK,Thread Group 1-35,text,true,,471,0,49,49,null,0,0,0
+1727106464431,194,Login,200,OK,Thread Group 1-76,text,true,,558,224,48,48,http://localhost:3001/login,182,0,1
+1727106464462,170,Login,200,OK,Thread Group 1-77,text,true,,556,224,48,48,http://localhost:3001/login,161,0,0
+1727106464481,167,Login,200,OK,Thread Group 1-78,text,true,,556,224,49,49,http://localhost:3001/login,155,0,0
+1727106464513,156,Login,200,OK,Thread Group 1-79,text,true,,554,224,50,50,http://localhost:3001/login,142,0,1
+1727106464531,180,Login,200,OK,Thread Group 1-80,text,true,,554,224,52,52,http://localhost:3001/login,166,0,2
+1727106464555,172,Login,200,OK,Thread Group 1-81,text,true,,554,224,52,52,http://localhost:3001/login,145,0,1
+1727106464585,144,Login,200,OK,Thread Group 1-82,text,true,,556,224,52,52,http://localhost:3001/login,131,0,1
+1727106463583,1169,run problem,200,OK,Thread Group 1-36,text,true,,277,384,53,53,http://localhost:3001/runSolver/36,1169,0,0
+1727106464752,0,Debug Sampler,200,OK,Thread Group 1-36,text,true,,471,0,53,53,null,0,0,0
+1727106464611,146,Login,200,OK,Thread Group 1-83,text,true,,556,224,52,52,http://localhost:3001/login,125,0,1
+1727106464660,136,Login,200,OK,Thread Group 1-85,text,true,,554,224,54,54,http://localhost:3001/login,121,0,1
+1727106463592,1213,run problem,200,OK,Thread Group 1-37,text,true,,277,384,54,54,http://localhost:3001/runSolver/37,1213,0,0
+1727106464805,0,Debug Sampler,200,OK,Thread Group 1-37,text,true,,471,0,54,54,null,0,0,0
+1727106464681,149,Login,200,OK,Thread Group 1-86,text,true,,558,224,54,54,http://localhost:3001/login,130,0,1
+1727106463676,1157,run problem,200,OK,Thread Group 1-40,text,true,,277,384,54,54,http://localhost:3001/runSolver/40,1157,0,0
+1727106464833,0,Debug Sampler,200,OK,Thread Group 1-40,text,true,,471,0,54,54,null,0,0,0
+1727106464636,203,Login,200,OK,Thread Group 1-84,text,true,,554,224,54,54,http://localhost:3001/login,185,0,1
+1727106463643,1206,run problem,200,OK,Thread Group 1-39,text,true,,277,384,54,54,http://localhost:3001/runSolver/39,1206,0,0
+1727106464849,0,Debug Sampler,200,OK,Thread Group 1-39,text,true,,471,0,54,54,null,0,0,0
+1727106464707,152,Login,200,OK,Thread Group 1-87,text,true,,552,224,54,54,http://localhost:3001/login,119,0,0
+1727106464733,142,Login,200,OK,Thread Group 1-88,text,true,,552,224,54,54,http://localhost:3001/login,125,0,1
+1727106463640,1261,run problem,200,OK,Thread Group 1-38,text,true,,277,384,55,55,http://localhost:3001/runSolver/38,1261,0,0
+1727106464901,0,Debug Sampler,200,OK,Thread Group 1-38,text,true,,471,0,55,55,null,0,0,0
+1727106464758,162,Login,200,OK,Thread Group 1-89,text,true,,556,224,55,55,http://localhost:3001/login,140,0,1
+1727106464782,141,Login,200,OK,Thread Group 1-90,text,true,,556,224,55,55,http://localhost:3001/login,124,0,0
+1727106463697,1232,run problem,200,OK,Thread Group 1-41,text,true,,277,384,55,55,http://localhost:3001/runSolver/41,1232,0,0
+1727106464930,0,Debug Sampler,200,OK,Thread Group 1-41,text,true,,471,0,55,55,null,0,0,0
+1727106464809,158,Login,200,OK,Thread Group 1-91,text,true,,558,224,56,56,http://localhost:3001/login,145,0,1
+1727106464835,142,Login,200,OK,Thread Group 1-92,text,true,,552,224,56,56,http://localhost:3001/login,124,0,1
+1727106463718,1262,run problem,200,OK,Thread Group 1-42,text,true,,277,384,56,56,http://localhost:3001/runSolver/42,1262,0,0
+1727106464980,0,Debug Sampler,200,OK,Thread Group 1-42,text,true,,470,0,56,56,null,0,0,0
+1727106463807,1181,run problem,200,OK,Thread Group 1-45,text,true,,277,384,56,56,http://localhost:3001/runSolver/45,1181,0,0
+1727106464988,0,Debug Sampler,200,OK,Thread Group 1-45,text,true,,471,0,56,56,null,0,0,0
+1727106464858,131,Login,200,OK,Thread Group 1-93,text,true,,556,224,55,55,http://localhost:3001/login,118,0,1
+1727106464883,122,Login,200,OK,Thread Group 1-94,text,true,,554,224,55,55,http://localhost:3001/login,114,0,1
+1727106463772,1249,run problem,200,OK,Thread Group 1-43,text,true,,277,384,56,56,http://localhost:3001/runSolver/43,1249,0,0
+1727106465021,0,Debug Sampler,200,OK,Thread Group 1-43,text,true,,471,0,56,56,null,0,0,0
+1727106463803,1226,run problem,200,OK,Thread Group 1-44,text,true,,277,384,55,55,http://localhost:3001/runSolver/44,1226,0,0
+1727106465029,0,Debug Sampler,200,OK,Thread Group 1-44,text,true,,471,0,55,55,null,0,0,0
+1727106464908,129,Login,200,OK,Thread Group 1-95,text,true,,558,224,55,55,http://localhost:3001/login,117,0,2
+1727106464934,121,Login,200,OK,Thread Group 1-96,text,true,,556,224,55,55,http://localhost:3001/login,115,0,1
+1727106464959,107,Login,200,OK,Thread Group 1-97,text,true,,552,224,56,56,http://localhost:3001/login,95,0,1
+1727106464983,118,Login,200,OK,Thread Group 1-98,text,true,,554,224,57,57,http://localhost:3001/login,104,0,1
+1727106465007,123,Login,200,OK,Thread Group 1-99,text,true,,554,224,58,58,http://localhost:3001/login,97,0,0
+1727106465032,133,Login,200,OK,Thread Group 1-100,text,true,,556,224,60,60,http://localhost:3001/login,115,0,1
+1727106465056,122,Login,200,OK,Thread Group 1-101,text,true,,556,224,60,60,http://localhost:3001/login,106,0,1
+1727106465082,149,Login,200,OK,Thread Group 1-102,text,true,,558,224,63,63,http://localhost:3001/login,135,0,1
+1727106463927,1368,run problem,200,OK,Thread Group 1-47,text,true,,277,384,65,65,http://localhost:3001/runSolver/47,1368,0,0
+1727106465295,0,Debug Sampler,200,OK,Thread Group 1-47,text,true,,470,0,65,65,null,0,0,0
+1727106465131,170,Login,200,OK,Thread Group 1-104,text,true,,556,224,64,64,http://localhost:3001/login,147,0,1
+1727106465107,210,Login,200,OK,Thread Group 1-103,text,true,,558,224,65,65,http://localhost:3001/login,187,0,0
+1727106465157,218,Login,200,OK,Thread Group 1-105,text,true,,558,224,67,67,http://localhost:3001/login,166,0,1
+1727106465181,194,Login,200,OK,Thread Group 1-106,text,true,,558,224,67,67,http://localhost:3001/login,136,0,1
+1727106465231,178,Login,200,OK,Thread Group 1-108,text,true,,556,224,69,69,http://localhost:3001/login,167,0,1
+1727106463871,1550,run problem,200,OK,Thread Group 1-46,text,true,,277,384,69,69,http://localhost:3001/runSolver/46,1550,0,0
+1727106465421,0,Debug Sampler,200,OK,Thread Group 1-46,text,true,,471,0,69,69,null,0,0,0
+1727106463984,1441,run problem,200,OK,Thread Group 1-50,text,true,,277,384,68,68,http://localhost:3001/runSolver/49,1441,0,0
+1727106465425,0,Debug Sampler,200,OK,Thread Group 1-50,text,true,,471,0,68,68,null,0,0,0
+1727106465208,248,Login,200,OK,Thread Group 1-107,text,true,,556,224,68,68,http://localhost:3001/login,233,0,1
+1727106463942,1520,run problem,200,OK,Thread Group 1-48,text,true,,277,384,69,69,http://localhost:3001/runSolver/48,1520,0,0
+1727106465462,0,Debug Sampler,200,OK,Thread Group 1-48,text,true,,471,0,69,69,null,0,0,0
+1727106465255,207,Login,200,OK,Thread Group 1-109,text,true,,554,224,68,68,http://localhost:3001/login,190,0,1
+1727106463987,1493,run problem,200,OK,Thread Group 1-49,text,true,,277,384,69,69,http://localhost:3001/runSolver/50,1493,0,0
+1727106465480,0,Debug Sampler,200,OK,Thread Group 1-49,text,true,,471,0,69,69,null,0,0,0
+1727106463994,1490,run problem,200,OK,Thread Group 1-51,text,true,,277,384,68,68,http://localhost:3001/runSolver/51,1490,0,0
+1727106465485,0,Debug Sampler,200,OK,Thread Group 1-51,text,true,,471,0,68,68,null,0,0,0
+1727106465281,205,Login,200,OK,Thread Group 1-110,text,true,,552,224,67,67,http://localhost:3001/login,167,0,1
+1727106464103,1433,run problem,200,OK,Thread Group 1-53,text,true,,277,384,69,69,http://localhost:3001/runSolver/53,1433,0,0
+1727106465536,0,Debug Sampler,200,OK,Thread Group 1-53,text,true,,471,0,69,69,null,0,0,0
+1727106465331,228,Login,200,OK,Thread Group 1-112,text,true,,556,224,69,69,http://localhost:3001/login,210,0,1
+1727106465307,280,Login,200,OK,Thread Group 1-111,text,true,,552,224,70,70,http://localhost:3001/login,266,0,2
+1727106465356,247,Login,200,OK,Thread Group 1-113,text,true,,552,224,70,70,http://localhost:3001/login,237,0,1
+1727106464096,1507,run problem,200,OK,Thread Group 1-52,text,true,,277,384,70,70,http://localhost:3001/runSolver/52,1507,0,0
+1727106465616,0,Debug Sampler,200,OK,Thread Group 1-52,text,true,,471,0,71,71,null,0,0,0
+1727106464108,1521,run problem,200,OK,Thread Group 1-54,text,true,,277,384,70,70,http://localhost:3001/runSolver/54,1521,0,0
+1727106465648,0,Debug Sampler,200,OK,Thread Group 1-54,text,true,,471,0,71,71,null,0,0,0
+1727106465380,271,Login,200,OK,Thread Group 1-114,text,true,,556,224,70,70,http://localhost:3001/login,256,0,1
+1727106465406,254,Login,200,OK,Thread Group 1-115,text,true,,554,224,71,71,http://localhost:3001/login,235,0,0
+1727106465432,265,Login,200,OK,Thread Group 1-116,text,true,,554,224,72,72,http://localhost:3001/login,252,0,1
+1727106465456,249,Login,200,OK,Thread Group 1-117,text,true,,552,224,72,72,http://localhost:3001/login,231,0,1
+1727106464133,1590,run problem,200,OK,Thread Group 1-55,text,true,,277,384,73,73,http://localhost:3001/runSolver/55,1590,0,0
+1727106465723,0,Debug Sampler,200,OK,Thread Group 1-55,text,true,,471,0,73,73,null,0,0,0
+1727106465506,222,Login,200,OK,Thread Group 1-119,text,true,,556,224,72,72,http://localhost:3001/login,211,0,1
+1727106465480,285,Login,200,OK,Thread Group 1-118,text,true,,554,224,74,74,http://localhost:3001/login,258,0,1
+1727106465531,273,Login,200,OK,Thread Group 1-120,text,true,,558,224,75,75,http://localhost:3001/login,233,0,2
+1727106465556,248,Login,200,OK,Thread Group 1-121,text,true,,554,224,75,75,http://localhost:3001/login,214,0,1
+1727106464306,1518,run problem,200,OK,Thread Group 1-63,text,true,,277,384,76,76,http://localhost:3001/runSolver/63,1518,0,0
+1727106465824,1,Debug Sampler,200,OK,Thread Group 1-63,text,true,,470,0,76,76,null,0,0,0
+1727106464217,1611,run problem,200,OK,Thread Group 1-59,text,true,,277,384,75,75,http://localhost:3001/runSolver/59,1611,0,0
+1727106465828,0,Debug Sampler,200,OK,Thread Group 1-59,text,true,,471,0,75,75,null,0,0,0
+1727106465580,251,Login,200,OK,Thread Group 1-122,text,true,,554,224,75,75,http://localhost:3001/login,238,0,1
+1727106464171,1681,run problem,200,OK,Thread Group 1-57,text,true,,277,384,75,75,http://localhost:3001/runSolver/57,1681,0,0
+1727106465853,0,Debug Sampler,200,OK,Thread Group 1-57,text,true,,471,0,75,75,null,0,0,0
+1727106464248,1608,run problem,200,OK,Thread Group 1-61,text,true,,277,384,74,74,http://localhost:3001/runSolver/60,1608,0,0
+1727106465857,0,Debug Sampler,200,OK,Thread Group 1-61,text,true,,471,0,74,74,null,0,0,0
+1727106465607,257,Login,200,OK,Thread Group 1-123,text,true,,552,224,74,74,http://localhost:3001/login,239,0,1
+1727106464171,1694,run problem,200,OK,Thread Group 1-56,text,true,,277,384,74,74,http://localhost:3001/runSolver/56,1694,0,0
+1727106465866,0,Debug Sampler,200,OK,Thread Group 1-56,text,true,,471,0,74,74,null,0,0,0
+1727106465657,209,Login,200,OK,Thread Group 1-125,text,true,,554,224,73,73,http://localhost:3001/login,184,0,1
+1727106465632,238,Login,200,OK,Thread Group 1-124,text,true,,556,224,73,73,http://localhost:3001/login,217,0,0
+1727106465683,215,Login,200,OK,Thread Group 1-126,text,true,,556,224,74,74,http://localhost:3001/login,207,0,1
+1727106465707,209,Login,200,OK,Thread Group 1-127,text,true,,554,224,75,75,http://localhost:3001/login,198,0,1
+1727106465731,187,Login,200,OK,Thread Group 1-128,text,true,,552,224,75,75,http://localhost:3001/login,176,0,1
+1727106465756,167,Login,200,OK,Thread Group 1-129,text,true,,558,224,75,75,http://localhost:3001/login,157,0,1
+1727106464196,1753,run problem,200,OK,Thread Group 1-58,text,true,,277,384,76,76,http://localhost:3001/runSolver/58,1753,0,0
+1727106465950,0,Debug Sampler,200,OK,Thread Group 1-58,text,true,,469,0,76,76,null,0,0,0
+1727106464287,1681,run problem,200,OK,Thread Group 1-62,text,true,,277,384,76,76,http://localhost:3001/runSolver/62,1681,0,0
+1727106465968,0,Debug Sampler,200,OK,Thread Group 1-62,text,true,,471,0,76,76,null,0,0,0
+1727106465782,190,Login,200,OK,Thread Group 1-130,text,true,,554,224,75,75,http://localhost:3001/login,180,0,1
+1727106464373,1606,run problem,200,OK,Thread Group 1-64,text,true,,277,384,75,75,http://localhost:3001/runSolver/65,1606,0,0
+1727106465979,0,Debug Sampler,200,OK,Thread Group 1-64,text,true,,471,0,75,75,null,0,0,0
+1727106465807,195,Login,200,OK,Thread Group 1-131,text,true,,556,224,75,75,http://localhost:3001/login,176,0,1
+1727106465831,173,Login,200,OK,Thread Group 1-132,text,true,,552,224,75,75,http://localhost:3001/login,156,0,0
+1727106464271,1742,run problem,200,OK,Thread Group 1-60,text,true,,277,384,76,76,http://localhost:3001/runSolver/61,1742,0,0
+1727106466013,0,Debug Sampler,200,OK,Thread Group 1-60,text,true,,471,0,76,76,null,0,0,0
+1727106465858,158,Login,200,OK,Thread Group 1-133,text,true,,556,224,75,75,http://localhost:3001/login,141,0,1
+1727106464377,1657,run problem,200,OK,Thread Group 1-66,text,true,,277,384,76,76,http://localhost:3001/runSolver/66,1657,0,0
+1727106466034,0,Debug Sampler,200,OK,Thread Group 1-66,text,true,,470,0,76,76,null,0,0,0
+1727106465882,167,Login,200,OK,Thread Group 1-134,text,true,,552,224,75,75,http://localhost:3001/login,158,0,1
+1727106465907,162,Login,200,OK,Thread Group 1-135,text,true,,552,224,76,76,http://localhost:3001/login,151,0,1
+1727106464487,1584,run problem,200,OK,Thread Group 1-68,text,true,,277,384,76,76,http://localhost:3001/runSolver/70,1584,0,0
+1727106466071,0,Debug Sampler,200,OK,Thread Group 1-68,text,true,,471,0,76,76,null,0,0,0
+1727106464348,1726,run problem,200,OK,Thread Group 1-65,text,true,,277,384,75,75,http://localhost:3001/runSolver/64,1726,0,0
+1727106466074,0,Debug Sampler,200,OK,Thread Group 1-65,text,true,,471,0,75,75,null,0,0,0
+1727106465932,147,Login,200,OK,Thread Group 1-136,text,true,,554,224,74,74,http://localhost:3001/login,129,0,1
+1727106465958,135,Login,200,OK,Thread Group 1-137,text,true,,556,224,75,75,http://localhost:3001/login,120,0,1
+1727106465980,139,Login,200,OK,Thread Group 1-138,text,true,,554,224,76,76,http://localhost:3001/login,131,0,0
+1727106464408,1708,run problem,200,OK,Thread Group 1-67,text,true,,277,384,76,76,http://localhost:3001/runSolver/67,1708,0,0
+1727106464505,1607,run problem,200,OK,Thread Group 1-71,text,true,,277,384,76,76,http://localhost:3001/runSolver/71,1607,0,0
+1727106466126,0,Debug Sampler,200,OK,Thread Group 1-71,text,true,,471,0,76,76,null,0,0,0
+1727106466126,0,Debug Sampler,200,OK,Thread Group 1-67,text,true,,471,0,76,76,null,0,0,0
+1727106466006,143,Login,200,OK,Thread Group 1-139,text,true,,554,224,75,75,http://localhost:3001/login,126,0,1
+1727106466032,121,Login,200,OK,Thread Group 1-140,text,true,,556,224,75,75,http://localhost:3001/login,106,0,1
+1727106464463,1685,run problem,200,OK,Thread Group 1-69,text,true,,277,384,75,75,http://localhost:3001/runSolver/68,1685,0,0
+1727106464597,1547,run problem,200,OK,Thread Group 1-73,text,true,,277,384,75,75,http://localhost:3001/runSolver/74,1547,0,0
+1727106466164,0,Debug Sampler,200,OK,Thread Group 1-73,text,true,,471,0,76,76,null,0,0,0
+1727106466164,0,Debug Sampler,200,OK,Thread Group 1-69,text,true,,471,0,76,76,null,0,0,0
+1727106464626,1580,run problem,200,OK,Thread Group 1-76,text,true,,277,384,75,75,http://localhost:3001/runSolver/76,1580,0,0
+1727106464476,1730,run problem,200,OK,Thread Group 1-70,text,true,,277,384,75,75,http://localhost:3001/runSolver/69,1730,0,0
+1727106466206,0,Debug Sampler,200,OK,Thread Group 1-70,text,true,,471,0,75,75,null,0,0,0
+1727106466206,0,Debug Sampler,200,OK,Thread Group 1-76,text,true,,471,0,75,75,null,0,0,0
+1727106464562,1659,run problem,200,OK,Thread Group 1-74,text,true,,277,384,74,74,http://localhost:3001/runSolver/73,1659,0,0
+1727106466222,0,Debug Sampler,200,OK,Thread Group 1-74,text,true,,471,0,74,74,null,0,0,0
+1727106466058,177,Login,200,OK,Thread Group 1-141,text,true,,556,224,74,74,http://localhost:3001/login,128,0,1
+1727106466082,172,Login,200,OK,Thread Group 1-142,text,true,,554,224,74,74,http://localhost:3001/login,124,0,1
+1727106464598,1659,run problem,200,OK,Thread Group 1-75,text,true,,277,384,75,75,http://localhost:3001/runSolver/75,1659,0,0
+1727106466257,0,Debug Sampler,200,OK,Thread Group 1-75,text,true,,471,0,75,75,null,0,0,0
+1727106464558,1702,run problem,200,OK,Thread Group 1-72,text,true,,277,384,74,74,http://localhost:3001/runSolver/72,1702,0,0
+1727106466261,0,Debug Sampler,200,OK,Thread Group 1-72,text,true,,470,0,74,74,null,0,0,0
+1727106464669,1601,run problem,200,OK,Thread Group 1-79,text,true,,277,384,73,73,http://localhost:3001/runSolver/79,1601,0,0
+1727106466270,0,Debug Sampler,200,OK,Thread Group 1-79,text,true,,471,0,73,73,null,0,0,0
+1727106466131,149,Login,200,OK,Thread Group 1-144,text,true,,554,224,72,72,http://localhost:3001/login,133,0,1
+1727106466107,183,Login,200,OK,Thread Group 1-143,text,true,,558,224,73,73,http://localhost:3001/login,146,0,0
+1727106466156,148,Login,200,OK,Thread Group 1-145,text,true,,556,224,73,73,http://localhost:3001/login,134,0,1
+1727106464632,1713,run problem,200,OK,Thread Group 1-77,text,true,,277,384,75,75,http://localhost:3001/runSolver/77,1713,0,0
+1727106466345,0,Debug Sampler,200,OK,Thread Group 1-77,text,true,,471,0,75,75,null,0,0,0
+1727106466207,162,Login,200,OK,Thread Group 1-147,text,true,,554,224,75,75,http://localhost:3001/login,153,0,0
+1727106466181,188,Login,200,OK,Thread Group 1-146,text,true,,554,224,75,75,http://localhost:3001/login,180,0,2
+1727106466232,195,Login,200,OK,Thread Group 1-148,text,true,,554,224,77,77,http://localhost:3001/login,174,0,1
+1727106466256,176,Login,200,OK,Thread Group 1-149,text,true,,558,224,78,78,http://localhost:3001/login,155,0,1
+1727106464664,1795,run problem,200,OK,Thread Group 1-78,text,true,,277,384,79,79,http://localhost:3001/runSolver/78,1795,0,0
+1727106466460,0,Debug Sampler,200,OK,Thread Group 1-78,text,true,,471,0,79,79,null,0,0,0
+1727106466282,183,Login,200,OK,Thread Group 1-150,text,true,,552,224,78,78,http://localhost:3001/login,156,0,1
+1727106464712,1754,run problem,200,OK,Thread Group 1-80,text,true,,277,384,78,78,http://localhost:3001/runSolver/80,1754,0,0
+1727106466467,0,Debug Sampler,200,OK,Thread Group 1-80,text,true,,471,0,78,78,null,0,0,0
+1727106464729,1743,run problem,200,OK,Thread Group 1-82,text,true,,277,384,77,77,http://localhost:3001/runSolver/82,1743,0,0
+1727106466472,0,Debug Sampler,200,OK,Thread Group 1-82,text,true,,470,0,77,77,null,0,0,0
+1727106466306,176,Login,200,OK,Thread Group 1-151,text,true,,554,224,77,77,http://localhost:3001/login,153,0,1
+1727106466333,193,Login,200,OK,Thread Group 1-152,text,true,,552,224,78,78,http://localhost:3001/login,172,0,1
+1727106466383,153,Login,200,OK,Thread Group 1-154,text,true,,560,224,79,79,http://localhost:3001/login,132,0,0
+1727106466356,192,Login,200,OK,Thread Group 1-153,text,true,,552,224,79,79,http://localhost:3001/login,166,0,1
+1727106466406,145,Login,200,OK,Thread Group 1-155,text,true,,556,224,79,79,http://localhost:3001/login,129,0,1
+1727106466431,186,Login,200,OK,Thread Group 1-156,text,true,,552,224,82,82,http://localhost:3001/login,180,0,1
+1727106466457,187,Login,200,OK,Thread Group 1-157,text,true,,554,224,83,83,http://localhost:3001/login,173,0,1
+1727106466481,162,Login,200,OK,Thread Group 1-158,text,true,,554,224,83,83,http://localhost:3001/login,132,0,2
+1727106466507,184,Login,200,OK,Thread Group 1-159,text,true,,560,224,85,85,http://localhost:3001/login,159,0,1
+1727106466557,159,Login,200,OK,Thread Group 1-161,text,true,,558,224,86,86,http://localhost:3001/login,138,0,1
+1727106466582,144,Login,200,OK,Thread Group 1-162,text,true,,552,224,86,86,http://localhost:3001/login,120,0,1
+1727106464758,2016,run problem,200,OK,Thread Group 1-83,text,true,,277,384,88,88,http://localhost:3001/runSolver/83,2016,0,0
+1727106466774,0,Debug Sampler,200,OK,Thread Group 1-83,text,true,,471,0,88,88,null,0,0,0
+1727106464796,1983,run problem,200,OK,Thread Group 1-85,text,true,,277,384,87,87,http://localhost:3001/runSolver/84,1983,0,0
+1727106466780,0,Debug Sampler,200,OK,Thread Group 1-85,text,true,,471,0,87,87,null,0,0,0
+1727106466632,166,Login,200,OK,Thread Group 1-164,text,true,,552,224,87,87,http://localhost:3001/login,132,0,0
+1727106464727,2075,run problem,200,OK,Thread Group 1-81,text,true,,277,384,87,87,http://localhost:3001/runSolver/81,2075,0,0
+1727106466802,0,Debug Sampler,200,OK,Thread Group 1-81,text,true,,471,0,87,87,null,0,0,0
+1727106464840,1964,run problem,200,OK,Thread Group 1-84,text,true,,277,384,86,86,http://localhost:3001/runSolver/86,1964,0,0
+1727106466805,0,Debug Sampler,200,OK,Thread Group 1-84,text,true,,471,0,86,86,null,0,0,0
+1727106466532,282,Login,200,OK,Thread Group 1-160,text,true,,558,224,86,86,http://localhost:3001/login,261,0,1
+1727106466656,164,Login,200,OK,Thread Group 1-165,text,true,,552,224,86,86,http://localhost:3001/login,141,0,1
+1727106466608,246,Login,200,OK,Thread Group 1-163,text,true,,558,224,87,87,http://localhost:3001/login,224,0,0
+1727106466682,186,Login,200,OK,Thread Group 1-166,text,true,,556,224,88,88,http://localhost:3001/login,172,0,1
+1727106464859,2033,run problem,200,OK,Thread Group 1-87,text,true,,277,384,89,89,http://localhost:3001/runSolver/87,2033,0,0
+1727106466892,0,Debug Sampler,200,OK,Thread Group 1-87,text,true,,471,0,89,89,null,0,0,0
+1727106466707,185,Login,200,OK,Thread Group 1-167,text,true,,554,224,88,88,http://localhost:3001/login,165,0,0
+1727106466731,180,Login,200,OK,Thread Group 1-168,text,true,,554,224,89,89,http://localhost:3001/login,165,0,1
+1727106466756,165,Login,200,OK,Thread Group 1-169,text,true,,558,224,89,89,http://localhost:3001/login,148,0,1
+1727106466783,159,Login,200,OK,Thread Group 1-170,text,true,,558,224,90,90,http://localhost:3001/login,146,0,1
+1727106466808,157,Login,200,OK,Thread Group 1-171,text,true,,552,224,91,91,http://localhost:3001/login,137,0,0
+1727106466832,157,Login,200,OK,Thread Group 1-172,text,true,,552,224,92,92,http://localhost:3001/login,146,0,1
+1727106466880,152,Login,200,OK,Thread Group 1-174,text,true,,554,224,93,93,http://localhost:3001/login,118,0,1
+1727106466856,177,Login,200,OK,Thread Group 1-173,text,true,,556,224,94,94,http://localhost:3001/login,160,0,1
+1727106466906,138,Login,200,OK,Thread Group 1-175,text,true,,552,224,94,94,http://localhost:3001/login,122,0,1
+1727106466956,134,Login,200,OK,Thread Group 1-177,text,true,,560,224,96,96,http://localhost:3001/login,118,0,1
+1727106466931,149,Login,200,OK,Thread Group 1-176,text,true,,560,224,95,95,http://localhost:3001/login,138,0,0
+1727106466981,127,Login,200,OK,Thread Group 1-178,text,true,,554,224,97,97,http://localhost:3001/login,108,0,1
+1727106464875,2238,run problem,200,OK,Thread Group 1-88,text,true,,277,384,97,97,http://localhost:3001/runSolver/88,2238,0,0
+1727106464830,2278,run problem,200,OK,Thread Group 1-86,text,true,,277,384,97,97,http://localhost:3001/runSolver/85,2278,0,0
+1727106467121,0,Debug Sampler,200,OK,Thread Group 1-86,text,true,,470,0,97,97,null,0,0,0
+1727106467121,0,Debug Sampler,200,OK,Thread Group 1-88,text,true,,471,0,97,97,null,0,0,0
+1727106467006,136,Login,200,OK,Thread Group 1-179,text,true,,558,224,96,96,http://localhost:3001/login,127,0,1
+1727106467057,122,Login,200,OK,Thread Group 1-181,text,true,,556,224,97,97,http://localhost:3001/login,109,0,1
+1727106467032,157,Login,200,OK,Thread Group 1-180,text,true,,556,224,98,98,http://localhost:3001/login,144,0,1
+1727106467081,151,Login,200,OK,Thread Group 1-182,text,true,,558,224,100,100,http://localhost:3001/login,126,0,1
+1727106467108,127,Login,200,OK,Thread Group 1-183,text,true,,558,224,100,100,http://localhost:3001/login,100,0,1
+1727106467131,138,Login,200,OK,Thread Group 1-184,text,true,,552,224,101,101,http://localhost:3001/login,120,0,1
+1727106467181,141,Login,200,OK,Thread Group 1-186,text,true,,556,224,103,103,http://localhost:3001/login,122,0,1
+1727106467155,172,Login,200,OK,Thread Group 1-185,text,true,,552,224,103,103,http://localhost:3001/login,150,0,1
+1727106467207,127,Login,200,OK,Thread Group 1-187,text,true,,558,224,104,104,http://localhost:3001/login,117,0,1
+1727106464967,2377,run problem,200,OK,Thread Group 1-91,text,true,,277,384,104,104,http://localhost:3001/runSolver/91,2377,0,0
+1727106467344,0,Debug Sampler,200,OK,Thread Group 1-91,text,true,,471,0,104,104,null,0,0,0
+1727106464920,2425,run problem,200,OK,Thread Group 1-89,text,true,,277,384,103,103,http://localhost:3001/runSolver/89,2425,0,0
+1727106467345,0,Debug Sampler,200,OK,Thread Group 1-89,text,true,,471,0,103,103,null,0,0,0
+1727106467231,144,Login,200,OK,Thread Group 1-188,text,true,,554,224,103,103,http://localhost:3001/login,135,0,1
+1727106467256,145,Login,200,OK,Thread Group 1-189,text,true,,552,224,104,104,http://localhost:3001/login,140,0,1
+1727106467281,145,Login,200,OK,Thread Group 1-190,text,true,,552,224,105,105,http://localhost:3001/login,128,0,1
+1727106467306,126,Login,200,OK,Thread Group 1-191,text,true,,556,224,106,106,http://localhost:3001/login,107,0,1
+1727106467331,129,Login,200,OK,Thread Group 1-192,text,true,,554,224,107,107,http://localhost:3001/login,119,0,1
+1727106465037,2429,run problem,200,OK,Thread Group 1-95,text,true,,277,384,107,107,http://localhost:3001/runSolver/95,2429,0,0
+1727106467466,0,Debug Sampler,200,OK,Thread Group 1-95,text,true,,471,0,107,107,null,0,0,0
+1727106464990,2482,run problem,200,OK,Thread Group 1-93,text,true,,277,384,106,106,http://localhost:3001/runSolver/93,2482,0,0
+1727106467472,0,Debug Sampler,200,OK,Thread Group 1-93,text,true,,471,0,106,106,null,0,0,0
+1727106464924,2549,run problem,200,OK,Thread Group 1-90,text,true,,277,384,105,105,http://localhost:3001/runSolver/90,2549,0,0
+1727106467473,0,Debug Sampler,200,OK,Thread Group 1-90,text,true,,471,0,105,105,null,0,0,0
+1727106467356,134,Login,200,OK,Thread Group 1-193,text,true,,554,224,105,105,http://localhost:3001/login,120,0,1
+1727106465005,2492,run problem,200,OK,Thread Group 1-94,text,true,,277,384,105,105,http://localhost:3001/runSolver/94,2492,0,0
+1727106467497,0,Debug Sampler,200,OK,Thread Group 1-94,text,true,,471,0,105,105,null,0,0,0
+1727106467381,116,Login,200,OK,Thread Group 1-194,text,true,,556,224,104,104,http://localhost:3001/login,106,0,1
+1727106464977,2526,run problem,200,OK,Thread Group 1-92,text,true,,277,384,104,104,http://localhost:3001/runSolver/92,2526,0,0
+1727106467503,0,Debug Sampler,200,OK,Thread Group 1-92,text,true,,471,0,104,104,null,0,0,0
+1727106465165,2342,run problem,200,OK,Thread Group 1-100,text,true,,277,385,104,104,http://localhost:3001/runSolver/100,2342,0,0
+1727106467507,0,Debug Sampler,200,OK,Thread Group 1-100,text,true,,472,0,104,104,null,0,0,0
+1727106465375,2142,run problem,200,OK,Thread Group 1-105,text,true,,277,385,103,103,http://localhost:3001/runSolver/105,2142,0,0
+1727106467517,0,Debug Sampler,200,OK,Thread Group 1-105,text,true,,472,0,103,103,null,0,0,0
+1727106467406,112,Login,200,OK,Thread Group 1-195,text,true,,554,224,102,102,http://localhost:3001/login,104,0,1
+1727106465301,2223,run problem,200,OK,Thread Group 1-104,text,true,,277,385,102,102,http://localhost:3001/runSolver/103,2223,0,0
+1727106467524,0,Debug Sampler,200,OK,Thread Group 1-104,text,true,,472,0,102,102,null,0,0,0
+1727106465066,2465,run problem,200,OK,Thread Group 1-97,text,true,,277,384,101,101,http://localhost:3001/runSolver/97,2465,0,0
+1727106467531,0,Debug Sampler,200,OK,Thread Group 1-97,text,true,,471,0,101,101,null,0,0,0
+1727106465150,2383,run problem,200,OK,Thread Group 1-99,text,true,,277,384,101,101,http://localhost:3001/runSolver/99,2383,0,0
+1727106467533,0,Debug Sampler,200,OK,Thread Group 1-99,text,true,,471,0,101,101,null,0,0,0
+1727106467431,104,Login,200,OK,Thread Group 1-196,text,true,,556,224,100,100,http://localhost:3001/login,95,0,1
+1727106465055,2494,run problem,200,OK,Thread Group 1-96,text,true,,277,384,100,100,http://localhost:3001/runSolver/96,2494,0,0
+1727106467549,0,Debug Sampler,200,OK,Thread Group 1-96,text,true,,471,0,100,100,null,0,0,0
+1727106467456,114,Login,200,OK,Thread Group 1-197,text,true,,552,224,99,99,http://localhost:3001/login,106,0,1
+1727106467481,105,Login,200,OK,Thread Group 1-198,text,true,,556,224,99,99,http://localhost:3001/login,100,0,1
+1727106465661,1954,run problem,200,OK,Thread Group 1-115,text,true,,277,385,99,99,http://localhost:3001/runSolver/115,1954,0,0
+1727106465486,2122,run problem,200,OK,Thread Group 1-110,text,true,,277,385,99,99,http://localhost:3001/runSolver/110,2122,0,0
+1727106467507,100,Login,200,OK,Thread Group 1-199,text,true,,556,224,99,99,http://localhost:3001/login,94,0,1
+1727106467622,0,Debug Sampler,200,OK,Thread Group 1-110,text,true,,472,0,99,99,null,0,0,0
+1727106467622,0,Debug Sampler,200,OK,Thread Group 1-115,text,true,,472,0,99,99,null,0,0,0
+1727106467532,91,Login,200,OK,Thread Group 1-200,text,true,,556,224,97,97,http://localhost:3001/login,86,0,1
+1727106465409,2228,run problem,200,OK,Thread Group 1-108,text,true,,277,385,97,97,http://localhost:3001/runSolver/107,2228,0,0
+1727106467637,0,Debug Sampler,200,OK,Thread Group 1-108,text,true,,471,0,97,97,null,0,0,0
+1727106465456,2209,run problem,200,OK,Thread Group 1-107,text,true,,277,385,96,96,http://localhost:3001/runSolver/108,2209,0,0
+1727106467665,0,Debug Sampler,200,OK,Thread Group 1-107,text,true,,472,0,96,96,null,0,0,0
+1727106465559,2109,run problem,200,OK,Thread Group 1-112,text,true,,277,385,95,95,http://localhost:3001/runSolver/111,2109,0,0
+1727106467668,0,Debug Sampler,200,OK,Thread Group 1-112,text,true,,472,0,95,95,null,0,0,0
+1727106465317,2354,run problem,200,OK,Thread Group 1-103,text,true,,277,385,94,94,http://localhost:3001/runSolver/104,2354,0,0
+1727106467671,0,Debug Sampler,200,OK,Thread Group 1-103,text,true,,472,0,94,94,null,0,0,0
+1727106465375,2303,run problem,200,OK,Thread Group 1-106,text,true,,277,385,93,93,http://localhost:3001/runSolver/106,2303,0,0
+1727106465231,2450,run problem,200,OK,Thread Group 1-102,text,true,,277,385,93,93,http://localhost:3001/runSolver/102,2450,0,0
+1727106465179,2507,run problem,200,OK,Thread Group 1-101,text,true,,277,385,93,93,http://localhost:3001/runSolver/101,2507,0,0
+1727106465101,2590,run problem,200,OK,Thread Group 1-98,text,true,,277,384,93,93,http://localhost:3001/runSolver/98,2590,0,0
+1727106467691,0,Debug Sampler,200,OK,Thread Group 1-98,text,true,,471,0,93,93,null,0,0,0
+1727106467686,0,Debug Sampler,200,OK,Thread Group 1-101,text,true,,472,0,93,93,null,0,0,0
+1727106467681,0,Debug Sampler,200,OK,Thread Group 1-102,text,true,,472,0,93,93,null,0,0,0
+1727106467678,0,Debug Sampler,200,OK,Thread Group 1-106,text,true,,472,0,93,93,null,0,0,0
+1727106465705,2062,run problem,200,OK,Thread Group 1-117,text,true,,277,385,89,89,http://localhost:3001/runSolver/117,2062,0,0
+1727106467767,0,Debug Sampler,200,OK,Thread Group 1-117,text,true,,472,0,89,89,null,0,0,0
+1727106465697,2078,run problem,200,OK,Thread Group 1-116,text,true,,277,385,88,88,http://localhost:3001/runSolver/116,2078,0,0
+1727106467775,0,Debug Sampler,200,OK,Thread Group 1-116,text,true,,471,0,88,88,null,0,0,0
+1727106465604,2189,run problem,200,OK,Thread Group 1-113,text,true,,277,385,87,87,http://localhost:3001/runSolver/113,2189,0,0
+1727106467793,0,Debug Sampler,200,OK,Thread Group 1-113,text,true,,472,0,87,87,null,0,0,0
+1727106465595,2209,run problem,200,OK,Thread Group 1-111,text,true,,277,385,86,86,http://localhost:3001/runSolver/112,2209,0,0
+1727106467805,0,Debug Sampler,200,OK,Thread Group 1-111,text,true,,472,0,86,86,null,0,0,0
+1727106465651,2193,run problem,200,OK,Thread Group 1-114,text,true,,277,385,85,85,http://localhost:3001/runSolver/114,2193,0,0
+1727106467844,0,Debug Sampler,200,OK,Thread Group 1-114,text,true,,471,0,85,85,null,0,0,0
+1727106465463,2382,run problem,200,OK,Thread Group 1-109,text,true,,277,385,84,84,http://localhost:3001/runSolver/109,2382,0,0
+1727106467845,0,Debug Sampler,200,OK,Thread Group 1-109,text,true,,472,0,84,84,null,0,0,0
+1727106465898,2001,run problem,200,OK,Thread Group 1-126,text,true,,277,385,83,83,http://localhost:3001/runSolver/126,2001,0,0
+1727106467899,0,Debug Sampler,200,OK,Thread Group 1-126,text,true,,472,0,83,83,null,0,0,0
+1727106465804,2154,run problem,200,OK,Thread Group 1-120,text,true,,277,385,82,82,http://localhost:3001/runSolver/120,2154,0,0
+1727106467958,0,Debug Sampler,200,OK,Thread Group 1-120,text,true,,472,0,82,82,null,0,0,0
+1727106465866,2106,run problem,200,OK,Thread Group 1-125,text,true,,277,385,81,81,http://localhost:3001/runSolver/124,2106,0,0
+1727106467972,0,Debug Sampler,200,OK,Thread Group 1-125,text,true,,472,0,81,81,null,0,0,0
+1727106465804,2263,run problem,200,OK,Thread Group 1-121,text,true,,277,385,80,80,http://localhost:3001/runSolver/121,2263,0,0
+1727106468067,0,Debug Sampler,200,OK,Thread Group 1-121,text,true,,472,0,80,80,null,0,0,0
+1727106465766,2309,run problem,200,OK,Thread Group 1-118,text,true,,277,385,79,79,http://localhost:3001/runSolver/119,2309,0,0
+1727106468075,0,Debug Sampler,200,OK,Thread Group 1-118,text,true,,472,0,79,79,null,0,0,0
+1727106465729,2356,run problem,200,OK,Thread Group 1-119,text,true,,277,385,78,78,http://localhost:3001/runSolver/118,2356,0,0
+1727106468085,1,Debug Sampler,200,OK,Thread Group 1-119,text,true,,472,0,78,78,null,0,0,0
+1727106465923,2165,run problem,200,OK,Thread Group 1-129,text,true,,277,385,77,77,http://localhost:3001/runSolver/129,2165,0,0
+1727106468088,0,Debug Sampler,200,OK,Thread Group 1-129,text,true,,472,0,77,77,null,0,0,0
+1727106465865,2533,run problem,200,OK,Thread Group 1-123,text,true,,277,385,76,76,http://localhost:3001/runSolver/123,2533,0,0
+1727106468398,0,Debug Sampler,200,OK,Thread Group 1-123,text,true,,472,0,76,76,null,0,0,0
+1727106465831,2571,run problem,200,OK,Thread Group 1-122,text,true,,277,385,75,75,http://localhost:3001/runSolver/122,2571,0,0
+1727106468402,0,Debug Sampler,200,OK,Thread Group 1-122,text,true,,472,0,75,75,null,0,0,0
+1727106465870,2538,run problem,200,OK,Thread Group 1-124,text,true,,277,385,74,74,http://localhost:3001/runSolver/125,2538,0,0
+1727106468408,0,Debug Sampler,200,OK,Thread Group 1-124,text,true,,472,0,74,74,null,0,0,0
+1727106466005,2544,run problem,200,OK,Thread Group 1-132,text,true,,277,385,73,73,http://localhost:3001/runSolver/132,2544,0,0
+1727106468549,0,Debug Sampler,200,OK,Thread Group 1-132,text,true,,472,0,73,73,null,0,0,0
+1727106466069,2601,run problem,200,OK,Thread Group 1-135,text,true,,277,385,72,72,http://localhost:3001/runSolver/135,2601,0,0
+1727106468671,0,Debug Sampler,200,OK,Thread Group 1-135,text,true,,471,0,72,72,null,0,0,0
+1727106466002,2652,run problem,200,OK,Thread Group 1-131,text,true,,277,385,72,72,http://localhost:3001/runSolver/131,2652,0,0
+1727106465973,2693,run problem,200,OK,Thread Group 1-130,text,true,,277,385,72,72,http://localhost:3001/runSolver/130,2693,0,0
+1727106465919,2749,run problem,200,OK,Thread Group 1-128,text,true,,277,385,72,72,http://localhost:3001/runSolver/128,2749,0,0
+1727106468693,0,Debug Sampler,200,OK,Thread Group 1-131,text,true,,472,0,72,72,null,0,0,0
+1727106468693,0,Debug Sampler,200,OK,Thread Group 1-130,text,true,,472,0,72,72,null,0,0,0
+1727106468693,0,Debug Sampler,200,OK,Thread Group 1-128,text,true,,472,0,72,72,null,0,0,0
+1727106466016,2689,run problem,200,OK,Thread Group 1-133,text,true,,277,385,68,68,http://localhost:3001/runSolver/133,2689,0,0
+1727106468705,1,Debug Sampler,200,OK,Thread Group 1-133,text,true,,471,0,68,68,null,0,0,0
+1727106465916,2803,run problem,200,OK,Thread Group 1-127,text,true,,277,385,67,67,http://localhost:3001/runSolver/127,2803,0,0
+1727106466100,2622,run problem,200,OK,Thread Group 1-136,text,true,,277,385,67,67,http://localhost:3001/runSolver/137,2622,0,0
+1727106466119,2614,run problem,200,OK,Thread Group 1-138,text,true,,277,385,67,67,http://localhost:3001/runSolver/138,2614,0,0
+1727106468733,0,Debug Sampler,200,OK,Thread Group 1-138,text,true,,472,0,67,67,null,0,0,0
+1727106468722,0,Debug Sampler,200,OK,Thread Group 1-136,text,true,,472,0,67,67,null,0,0,0
+1727106468719,0,Debug Sampler,200,OK,Thread Group 1-127,text,true,,472,0,67,67,null,0,0,0
+1727106466049,2687,run problem,200,OK,Thread Group 1-134,text,true,,277,385,64,64,http://localhost:3001/runSolver/134,2687,0,0
+1727106468736,1,Debug Sampler,200,OK,Thread Group 1-134,text,true,,472,0,64,64,null,0,0,0
+1727106466100,2642,run problem,200,OK,Thread Group 1-137,text,true,,277,385,63,63,http://localhost:3001/runSolver/136,2642,0,0
+1727106468742,0,Debug Sampler,200,OK,Thread Group 1-137,text,true,,472,0,63,63,null,0,0,0
+1727106466164,2590,run problem,200,OK,Thread Group 1-139,text,true,,277,385,62,62,http://localhost:3001/runSolver/139,2590,0,0
+1727106468754,1,Debug Sampler,200,OK,Thread Group 1-139,text,true,,471,0,62,62,null,0,0,0
+1727106466164,2606,run problem,200,OK,Thread Group 1-140,text,true,,277,385,61,61,http://localhost:3001/runSolver/140,2606,0,0
+1727106468770,0,Debug Sampler,200,OK,Thread Group 1-140,text,true,,472,0,61,61,null,0,0,0
+1727106466369,2406,run problem,200,OK,Thread Group 1-147,text,true,,277,385,60,60,http://localhost:3001/runSolver/146,2406,0,0
+1727106468776,0,Debug Sampler,200,OK,Thread Group 1-147,text,true,,472,0,60,60,null,0,0,0
+1727106466304,2474,run problem,200,OK,Thread Group 1-145,text,true,,277,385,59,59,http://localhost:3001/runSolver/145,2474,0,0
+1727106468778,0,Debug Sampler,200,OK,Thread Group 1-145,text,true,,471,0,59,59,null,0,0,0
+1727106466280,2502,run problem,200,OK,Thread Group 1-144,text,true,,277,385,58,58,http://localhost:3001/runSolver/143,2502,0,0
+1727106468782,0,Debug Sampler,200,OK,Thread Group 1-144,text,true,,472,0,58,58,null,0,0,0
+1727106466235,2553,run problem,200,OK,Thread Group 1-141,text,true,,277,385,57,57,http://localhost:3001/runSolver/141,2553,0,0
+1727106468788,0,Debug Sampler,200,OK,Thread Group 1-141,text,true,,472,0,57,57,null,0,0,0
+1727106466290,2504,run problem,200,OK,Thread Group 1-143,text,true,,277,385,56,56,http://localhost:3001/runSolver/144,2504,0,0
+1727106468794,0,Debug Sampler,200,OK,Thread Group 1-143,text,true,,472,0,56,56,null,0,0,0
+1727106466254,2546,run problem,200,OK,Thread Group 1-142,text,true,,277,385,55,55,http://localhost:3001/runSolver/142,2546,0,0
+1727106468800,0,Debug Sampler,200,OK,Thread Group 1-142,text,true,,472,0,55,55,null,0,0,0
+1727106466692,2114,run problem,200,OK,Thread Group 1-159,text,true,,277,385,54,54,http://localhost:3001/runSolver/159,2114,0,0
+1727106468806,1,Debug Sampler,200,OK,Thread Group 1-159,text,true,,470,0,54,54,null,0,0,0
+1727106466716,2137,run problem,200,OK,Thread Group 1-161,text,true,,277,385,53,53,http://localhost:3001/runSolver/160,2137,0,0
+1727106468854,0,Debug Sampler,200,OK,Thread Group 1-161,text,true,,471,0,53,53,null,0,0,0
+1727106466726,2129,run problem,200,OK,Thread Group 1-162,text,true,,277,385,52,52,http://localhost:3001/runSolver/161,2129,0,0
+1727106468856,0,Debug Sampler,200,OK,Thread Group 1-162,text,true,,471,0,52,52,null,0,0,0
+1727106466655,2207,run problem,200,OK,Thread Group 1-157,text,true,,277,385,51,51,http://localhost:3001/runSolver/158,2207,0,0
+1727106468862,0,Debug Sampler,200,OK,Thread Group 1-157,text,true,,472,0,51,51,null,0,0,0
+1727106466617,2251,run problem,200,OK,Thread Group 1-156,text,true,,277,385,50,50,http://localhost:3001/runSolver/156,2251,0,0
+1727106468868,0,Debug Sampler,200,OK,Thread Group 1-156,text,true,,472,0,50,50,null,0,0,0
+1727106466655,2219,run problem,200,OK,Thread Group 1-158,text,true,,277,385,49,49,http://localhost:3001/runSolver/157,2219,0,0
+1727106468874,0,Debug Sampler,200,OK,Thread Group 1-158,text,true,,472,0,49,49,null,0,0,0
+1727106466551,2337,run problem,200,OK,Thread Group 1-155,text,true,,277,385,48,48,http://localhost:3001/runSolver/155,2337,0,0
+1727106468888,0,Debug Sampler,200,OK,Thread Group 1-155,text,true,,472,0,48,48,null,0,0,0
+1727106466536,2355,run problem,200,OK,Thread Group 1-154,text,true,,277,385,47,47,http://localhost:3001/runSolver/153,2355,0,0
+1727106468891,0,Debug Sampler,200,OK,Thread Group 1-154,text,true,,472,0,47,47,null,0,0,0
+1727106466526,2370,run problem,200,OK,Thread Group 1-152,text,true,,277,385,46,46,http://localhost:3001/runSolver/152,2370,0,0
+1727106468896,0,Debug Sampler,200,OK,Thread Group 1-152,text,true,,472,0,46,46,null,0,0,0
+1727106466549,2352,run problem,200,OK,Thread Group 1-153,text,true,,277,385,45,45,http://localhost:3001/runSolver/154,2352,0,0
+1727106468901,0,Debug Sampler,200,OK,Thread Group 1-153,text,true,,472,0,45,45,null,0,0,0
+1727106466482,2429,run problem,200,OK,Thread Group 1-151,text,true,,277,385,44,44,http://localhost:3001/runSolver/151,2429,0,0
+1727106468911,0,Debug Sampler,200,OK,Thread Group 1-151,text,true,,472,0,44,44,null,0,0,0
+1727106466433,2491,run problem,200,OK,Thread Group 1-149,text,true,,277,385,43,43,http://localhost:3001/runSolver/149,2491,0,0
+1727106468924,0,Debug Sampler,200,OK,Thread Group 1-149,text,true,,472,0,43,43,null,0,0,0
+1727106466465,2466,run problem,200,OK,Thread Group 1-150,text,true,,277,385,42,42,http://localhost:3001/runSolver/150,2466,0,0
+1727106468931,0,Debug Sampler,200,OK,Thread Group 1-150,text,true,,472,0,42,42,null,0,0,0
+1727106466427,2513,run problem,200,OK,Thread Group 1-148,text,true,,277,385,41,41,http://localhost:3001/runSolver/148,2513,0,0
+1727106468940,0,Debug Sampler,200,OK,Thread Group 1-148,text,true,,472,0,41,41,null,0,0,0
+1727106466369,2574,run problem,200,OK,Thread Group 1-146,text,true,,277,385,40,40,http://localhost:3001/runSolver/147,2574,0,0
+1727106468943,0,Debug Sampler,200,OK,Thread Group 1-146,text,true,,472,0,40,40,null,0,0,0
+1727106466893,2056,run problem,200,OK,Thread Group 1-167,text,true,,277,385,39,39,http://localhost:3001/runSolver/167,2056,0,0
+1727106468950,0,Debug Sampler,200,OK,Thread Group 1-167,text,true,,472,0,39,39,null,0,0,0
+1727106466921,2043,run problem,200,OK,Thread Group 1-169,text,true,,277,385,38,38,http://localhost:3001/runSolver/169,2043,0,0
+1727106468965,0,Debug Sampler,200,OK,Thread Group 1-169,text,true,,472,0,38,38,null,0,0,0
+1727106466798,2177,run problem,200,OK,Thread Group 1-164,text,true,,277,385,37,37,http://localhost:3001/runSolver/162,2177,0,0
+1727106468975,0,Debug Sampler,200,OK,Thread Group 1-164,text,true,,472,0,37,37,null,0,0,0
+1727106466869,2122,run problem,200,OK,Thread Group 1-166,text,true,,277,385,36,36,http://localhost:3001/runSolver/166,2122,0,0
+1727106468991,1,Debug Sampler,200,OK,Thread Group 1-166,text,true,,472,0,36,36,null,0,0,0
+1727106466854,2147,run problem,200,OK,Thread Group 1-163,text,true,,277,385,35,35,http://localhost:3001/runSolver/165,2147,0,0
+1727106469001,0,Debug Sampler,200,OK,Thread Group 1-163,text,true,,472,0,35,35,null,0,0,0
+1727106466820,2187,run problem,200,OK,Thread Group 1-165,text,true,,277,385,34,34,http://localhost:3001/runSolver/164,2187,0,0
+1727106469007,0,Debug Sampler,200,OK,Thread Group 1-165,text,true,,472,0,34,34,null,0,0,0
+1727106467094,1916,run problem,200,OK,Thread Group 1-176,text,true,,277,385,33,33,http://localhost:3001/runSolver/177,1916,0,0
+1727106469010,0,Debug Sampler,200,OK,Thread Group 1-176,text,true,,472,0,33,33,null,0,0,0
+1727106466814,2199,run problem,200,OK,Thread Group 1-160,text,true,,277,385,32,32,http://localhost:3001/runSolver/163,2199,0,0
+1727106469014,0,Debug Sampler,200,OK,Thread Group 1-160,text,true,,472,0,32,32,null,0,0,0
+1727106467044,1974,run problem,200,OK,Thread Group 1-175,text,true,,277,385,31,31,http://localhost:3001/runSolver/175,1974,0,0
+1727106469019,0,Debug Sampler,200,OK,Thread Group 1-175,text,true,,472,0,31,31,null,0,0,0
+1727106467034,1993,run problem,200,OK,Thread Group 1-173,text,true,,277,385,30,30,http://localhost:3001/runSolver/174,1993,0,0
+1727106469027,0,Debug Sampler,200,OK,Thread Group 1-173,text,true,,471,0,30,30,null,0,0,0
+1727106466990,2044,run problem,200,OK,Thread Group 1-172,text,true,,277,385,29,29,http://localhost:3001/runSolver/172,2044,0,0
+1727106469034,0,Debug Sampler,200,OK,Thread Group 1-172,text,true,,472,0,29,29,null,0,0,0
+1727106467032,2004,run problem,200,OK,Thread Group 1-174,text,true,,277,385,28,28,http://localhost:3001/runSolver/173,2004,0,0
+1727106469036,0,Debug Sampler,200,OK,Thread Group 1-174,text,true,,472,0,28,28,null,0,0,0
+1727106466942,2101,run problem,200,OK,Thread Group 1-170,text,true,,277,385,27,27,http://localhost:3001/runSolver/170,2101,0,0
+1727106469043,0,Debug Sampler,200,OK,Thread Group 1-170,text,true,,472,0,27,27,null,0,0,0
+1727106466965,2089,run problem,200,OK,Thread Group 1-171,text,true,,277,385,26,26,http://localhost:3001/runSolver/171,2089,0,0
+1727106469054,0,Debug Sampler,200,OK,Thread Group 1-171,text,true,,472,0,26,26,null,0,0,0
+1727106466912,2146,run problem,200,OK,Thread Group 1-168,text,true,,277,385,25,25,http://localhost:3001/runSolver/168,2146,0,0
+1727106469058,0,Debug Sampler,200,OK,Thread Group 1-168,text,true,,472,0,25,25,null,0,0,0
+1727106467269,1795,run problem,200,OK,Thread Group 1-184,text,true,,277,385,24,24,http://localhost:3001/runSolver/184,1795,0,0
+1727106469064,0,Debug Sampler,200,OK,Thread Group 1-184,text,true,,472,0,24,24,null,0,0,0
+1727106467235,1833,run problem,200,OK,Thread Group 1-183,text,true,,277,385,23,23,http://localhost:3001/runSolver/183,1833,0,0
+1727106469068,0,Debug Sampler,200,OK,Thread Group 1-183,text,true,,472,0,23,23,null,0,0,0
+1727106467180,1893,run problem,200,OK,Thread Group 1-181,text,true,,277,385,22,22,http://localhost:3001/runSolver/180,1893,0,0
+1727106469073,0,Debug Sampler,200,OK,Thread Group 1-181,text,true,,472,0,22,22,null,0,0,0
+1727106467153,1925,run problem,200,OK,Thread Group 1-179,text,true,,277,385,21,21,http://localhost:3001/runSolver/179,1925,0,0
+1727106469078,0,Debug Sampler,200,OK,Thread Group 1-179,text,true,,472,0,21,21,null,0,0,0
+1727106467108,1976,run problem,200,OK,Thread Group 1-178,text,true,,277,385,20,20,http://localhost:3001/runSolver/178,1976,0,0
+1727106469084,0,Debug Sampler,200,OK,Thread Group 1-178,text,true,,472,0,20,20,null,0,0,0
+1727106467094,1994,run problem,200,OK,Thread Group 1-177,text,true,,277,385,19,19,http://localhost:3001/runSolver/176,1994,0,0
+1727106469088,1,Debug Sampler,200,OK,Thread Group 1-177,text,true,,472,0,19,19,null,0,0,0
+1727106467322,1771,run problem,200,OK,Thread Group 1-186,text,true,,277,385,18,18,http://localhost:3001/runSolver/185,1771,0,0
+1727106469093,0,Debug Sampler,200,OK,Thread Group 1-186,text,true,,472,0,18,18,null,0,0,0
+1727106467232,1866,run problem,200,OK,Thread Group 1-182,text,true,,277,385,17,17,http://localhost:3001/runSolver/182,1866,0,0
+1727106469098,0,Debug Sampler,200,OK,Thread Group 1-182,text,true,,471,0,17,17,null,0,0,0
+1727106467328,1775,run problem,200,OK,Thread Group 1-185,text,true,,277,385,16,16,http://localhost:3001/runSolver/186,1775,0,0
+1727106469103,0,Debug Sampler,200,OK,Thread Group 1-185,text,true,,472,0,16,16,null,0,0,0
+1727106467189,1919,run problem,200,OK,Thread Group 1-180,text,true,,277,385,15,15,http://localhost:3001/runSolver/181,1919,0,0
+1727106469108,0,Debug Sampler,200,OK,Thread Group 1-180,text,true,,472,0,15,15,null,0,0,0
+1727106467375,1738,run problem,200,OK,Thread Group 1-188,text,true,,277,385,14,14,http://localhost:3001/runSolver/188,1738,0,0
+1727106469113,0,Debug Sampler,200,OK,Thread Group 1-188,text,true,,471,0,14,14,null,0,0,0
+1727106467334,1785,run problem,200,OK,Thread Group 1-187,text,true,,277,385,13,13,http://localhost:3001/runSolver/187,1785,0,0
+1727106469119,0,Debug Sampler,200,OK,Thread Group 1-187,text,true,,472,0,13,13,null,0,0,0
+1727106467427,1696,run problem,200,OK,Thread Group 1-190,text,true,,277,385,12,12,http://localhost:3001/runSolver/190,1696,0,0
+1727106469124,0,Debug Sampler,200,OK,Thread Group 1-190,text,true,,472,0,12,12,null,0,0,0
+1727106467490,1638,run problem,200,OK,Thread Group 1-193,text,true,,277,385,11,11,http://localhost:3001/runSolver/193,1638,0,0
+1727106469128,0,Debug Sampler,200,OK,Thread Group 1-193,text,true,,472,0,11,11,null,0,0,0
+1727106467402,1730,run problem,200,OK,Thread Group 1-189,text,true,,277,385,10,10,http://localhost:3001/runSolver/189,1730,0,0
+1727106469133,0,Debug Sampler,200,OK,Thread Group 1-189,text,true,,472,0,10,10,null,0,0,0
+1727106467432,1704,run problem,200,OK,Thread Group 1-191,text,true,,277,385,9,9,http://localhost:3001/runSolver/191,1704,0,0
+1727106469136,0,Debug Sampler,200,OK,Thread Group 1-191,text,true,,472,0,9,9,null,0,0,0
+1727106467461,1680,run problem,200,OK,Thread Group 1-192,text,true,,277,385,8,8,http://localhost:3001/runSolver/192,1680,0,0
+1727106469141,1,Debug Sampler,200,OK,Thread Group 1-192,text,true,,472,0,8,8,null,0,0,0
+1727106467498,1648,run problem,200,OK,Thread Group 1-194,text,true,,277,385,7,7,http://localhost:3001/runSolver/194,1648,0,0
+1727106469146,0,Debug Sampler,200,OK,Thread Group 1-194,text,true,,471,0,7,7,null,0,0,0
+1727106467535,1617,run problem,200,OK,Thread Group 1-196,text,true,,277,385,6,6,http://localhost:3001/runSolver/196,1617,0,0
+1727106469152,0,Debug Sampler,200,OK,Thread Group 1-196,text,true,,472,0,6,6,null,0,0,0
+1727106467624,1541,run problem,200,OK,Thread Group 1-200,text,true,,277,385,5,5,http://localhost:3001/runSolver/200,1541,0,0
+1727106467622,1539,run problem,200,OK,Thread Group 1-199,text,true,,277,385,5,5,http://localhost:3001/runSolver/199,1539,0,0
+1727106467518,1639,run problem,200,OK,Thread Group 1-195,text,true,,277,385,5,5,http://localhost:3001/runSolver/195,1639,0,0
+1727106469168,0,Debug Sampler,200,OK,Thread Group 1-200,text,true,,472,0,5,5,null,0,0,0
+1727106469168,0,Debug Sampler,200,OK,Thread Group 1-199,text,true,,472,0,5,5,null,0,0,0
+1727106469168,0,Debug Sampler,200,OK,Thread Group 1-195,text,true,,472,0,5,5,null,0,0,0
+1727106467583,1586,run problem,200,OK,Thread Group 1-197,text,true,,277,385,2,2,http://localhost:3001/runSolver/197,1586,0,0
+1727106469169,0,Debug Sampler,200,OK,Thread Group 1-197,text,true,,472,0,2,2,null,0,0,0
+1727106467587,1587,run problem,200,OK,Thread Group 1-198,text,true,,277,385,1,1,http://localhost:3001/runSolver/198,1587,0,0
+1727106469174,0,Debug Sampler,200,OK,Thread Group 1-198,text,true,,471,0,1,1,null,0,0,0
