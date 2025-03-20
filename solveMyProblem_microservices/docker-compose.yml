@@ -1,0 +1,138 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3001:4001"
+    depends_on:
+      solvefrontend:
+        condition: service_healthy
+    environment:
+      - DB_HOST=solvefrontend
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=""
+      - DB_NAME=solvefrontend
+      - API_BASE_URL=http://frontend:4001
+      - USERS_SERVICE_URL=http://users:4000
+      - PROBLEM_SERVICE_URL=http://problems:4002
+      - SOLVER_SERVICE_URL=http://solver:4003
+    restart: always
+
+  solvefrontend:
+    image: mysql:8
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_DATABASE: solvefrontend
+    ports:
+      - "3307:3306"
+    volumes:
+      - solvefrontend_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  users:
+    build:
+      context: ./users_service
+    ports:
+      - "3000:4000"
+    depends_on:
+      solvemyproblem:
+        condition: service_healthy
+    environment:
+      - DB_HOST=solvemyproblem
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=""
+      - DB_NAME=solvemyproblem
+      - API_BASE_URL=http://users:4000
+    restart: always
+
+  solvemyproblem:
+    image: mysql:8
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_DATABASE: solvemyproblem
+    ports:
+      - "3308:3306"
+    volumes:
+      - solvemyproblem_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  problems:
+    build:
+      context: ./problem_management_service
+    ports:
+      - "3002:4002"
+    depends_on:
+      solveproblemanage:
+        condition: service_healthy
+    environment:
+      - DB_HOST=solveproblemanage
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=""
+      - DB_NAME=solveproblemanage
+      - API_BASE_URL=http://problems:4002
+    restart: always
+
+  solveproblemanage:
+    image: mysql:8
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_DATABASE: solveproblemanage
+    ports:
+      - "3309:3306"
+    volumes:
+      - solveproblemanage_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  solver:
+    build:
+      context: ./solver_service
+    ports:
+      - "3003:4003"
+    depends_on:
+      solvesolutions:
+        condition: service_healthy
+    environment:
+      - DB_HOST=solvesolutions
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=""
+      - DB_NAME=solvesolutions
+      - API_BASE_URL=http://solver:4003
+      - PROBLEM_SERVICE_URL=http://problems:4002
+    restart: always
+
+  solvesolutions:
+    image: mysql:8
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_DATABASE: solvesolutions
+    ports:
+      - "3310:3306"
+    volumes:
+      - solvesolutions_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  solvefrontend_data:
+  solvemyproblem_data:
+  solveproblemanage_data:
+  solvesolutions_data:

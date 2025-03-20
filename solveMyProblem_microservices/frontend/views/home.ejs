@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home and Credits Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body, html {
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            margin: 0;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .header-title {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+        .header .credits-balance {
+            margin-top: 5px;
+            font-size: 18px;
+            margin-left: 40px;
+            color: white;
+        }
+        .footer {
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 60px);
+            padding-bottom: 60px; /* Adjust based on the footer's height */
+        }
+        .top-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        .credits-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 20px; /* Added margin to separate from create problem button */
+        }
+        .credit-controls {
+            display: flex;
+            align-items: center;
+        }
+        .credit-controls button {
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            line-height: 1.5;
+            text-align: center;
+            margin-right: 5px; /* space between buttons */
+        }
+        .credit-controls .buy-credits-btn {
+            border-radius: 5px;
+            width: auto;
+            height: 30px;
+            line-height: normal;
+        }
+        .credit-controls input[type="number"] {
+            width: 50px;
+            text-align: center;
+            margin-right: 5px; /* space between input and button */
+        }
+        .button-group {
+            display: flex;
+            align-items: center
+        }
+        .create-problem-btn {
+            background-color: #28a745;
+            border-radius: 5px;
+            width: auto;
+            height: 50px;
+            line-height: normal;
+            color: #fff;
+            border: none;
+            margin-left: 5px;
+        }
+        .logout-form {
+            margin-left: 10px;
+        }
+        .table-responsive {
+            margin: 20px 0;
+        }
+        .table {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .table thead th {
+            background-color: #007bff;
+            color: white;
+        }
+        .actions {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .actions h2 {
+            margin: 0;
+            color: #007bff;
+        }
+        .btn-success {
+            background-color: #28a745;
+            border-radius: 5px;
+            width: auto;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="header-title">
+        <h1>SolveMyProblem</h1>
+        <div id="date-time"></div>
+    </div>
+    <div id="userCreditsBalance" class="credits-balance">Loading credits...</div>
+</div>
+
+<div class="container">
+    <div class="top-buttons">
+        <div class="credits-section">
+            <form id="buyCreditsForm" action="/buy-credits" method="POST" onsubmit="handleBuyCredits(event)">
+                <div class="credit-controls">
+                    <button type="button" onclick="changeCredits(-10)">-</button>
+                    <input type="number" id="creditsCount" name="creditsToAdd" value="10" min="0">
+                    <button type="button" onclick="changeCredits(10)">+</button>
+                    <button type="submit" class="btn btn-primary buy-credits-btn">Buy Credits</button>
+                </div>
+            </form>
+        </div>
+        <div class="button-group">
+            <button class="btn btn-success create-problem-btn" style="margin-right: 10px;" onclick="createNewProblem()">Create New Problem</button>
+            <button id="analyticsButton" class="btn btn-info" style="display: none;" onclick="viewAnalytics()">Analytics</button>
+            <form action="/logout" method="post" class="logout-form">
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; margin-top: 20px;">Problems History</h2>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Created By</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Created At</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="problemsTableBody">
+            <!-- Dynamic data rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 SolveMyProblem. All rights reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('date-time').innerText = new Date().toLocaleString();
+    setInterval(() => {
+        document.getElementById('date-time').innerText = new Date().toLocaleString();
+    }, 1000);
+
+    let userCredits = 0;
+    let userRole = 0;
+    const token = '<%= token %>';
+
+
+    function changeCredits(amount) {
+        const creditsInput = document.getElementById('creditsCount');
+        let credits = parseInt(creditsInput.value);
+        credits += amount;
+        credits = Math.max(0, credits);
+        creditsInput.value = credits;
+    }
+    function handleBuyCredits(event) {
+        event.preventDefault();
+        const form = document.getElementById('buyCreditsForm');
+        const creditsToAdd = document.getElementById('creditsCount').value;
+
+
+
+        fetch('/updateCredits', {
+
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify({ creditsToAdd })
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to buy credits');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Credits bought successfully:', data);
+                location.reload();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('/fetchCredits', {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch credits');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Fetched credits data:', data);
+                userCredits = data.credits;
+                userRole = data.role;
+                document.getElementById('userCreditsBalance').innerText = `Credits balance: ${data.credits}`;
+                if (data.role===1){
+                    document.getElementById('analyticsButton').style.display = 'block';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('userCreditsBalance').innerText = 'Failed to load credits';
+            });
+    });
+
+    function createNewProblem() {
+        window.location.href = '/newproblem';
+    }
+
+    function viewAnalytics() {
+        window.location.href = '/analytics';
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('/problems', {
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.getElementById('problemsTableBody');
+                data.forEach(problem => {
+                    let row = tableBody.insertRow();
+                    row.insertCell(0).textContent = problem.username; // Created By
+                    row.insertCell(1).textContent = problem.problemName; // Name
+                    row.insertCell(2).textContent = problem.status; // Status
+                    row.insertCell(3).textContent = new Date(problem.createdAt).toLocaleString(); // Created At
+
+                    // Action cell for buttons
+                    let actionCell = row.insertCell(4);
+
+                    // View/Edit Button
+                    let viewEditButton = document.createElement('button');
+                    viewEditButton.className = 'btn btn-primary';
+                    viewEditButton.textContent = 'View/Edit';
+                    viewEditButton.onclick = function() { window.location.href = `/editProblem?problemId=${problem.problemId}`; };
+                    actionCell.appendChild(viewEditButton);
+                    actionCell.appendChild(document.createTextNode(' ')); // Add space between buttons
+
+                    // Run Button
+                    if (problem.status === 'Ready') {
+                        let runButton = document.createElement('button');
+                        runButton.className = 'btn btn-success';
+                        runButton.textContent = 'Run';
+                        runButton.onclick = function() { runProblem(problem.problemId); };
+                        actionCell.appendChild(runButton);
+                        actionCell.appendChild(document.createTextNode(' ')); // Add space between buttons
+                    }
+
+                    // View Results Button
+                    if (problem.status === 'Executed') {
+                        let resultsButton = document.createElement('button');
+                        resultsButton.className = 'btn btn-info';
+                        resultsButton.textContent = 'View Results';
+                        resultsButton.onclick = function() {
+                            window.location.href = `/solution?problemId=${problem.problemId}&problemName=${encodeURIComponent(problem.problemName)}`;
+                        };
+                        actionCell.appendChild(resultsButton);
+                        actionCell.appendChild(document.createTextNode(' ')); // Add space between buttons
+                    }
+
+                    // Delete Button
+                    let deleteButton = document.createElement('button');
+                    deleteButton.className = 'btn btn-danger';
+                    deleteButton.textContent = 'Delete';
+                    deleteButton.onclick = function() { deleteProblem(problem.problemId); };
+                    actionCell.appendChild(deleteButton);
+                });
+            })
+            .catch(error => console.error('Failed to load problems:', error));
+    });
+
+    function deleteProblem(problemId) {
+        if (!confirm(`Are you sure you want to delete this problem with Id: ${problemId}`)) return;
+
+        fetch(`/deleteProblem`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify({ problemId: problemId })
+        })
+            .then(response => {
+                if (!response.ok) throw new Error('Failed to delete the problem');
+                console.log('Problem deleted successfully');
+                location.reload(); // Reload the page or alternatively remove the row from the table
+            })
+            .catch(error => {
+                console.error('Error deleting problem:', error);
+            });
+    }
+
+    function runProblem(problemId) {
+        let timeoutHandle;  // This will store our timeout so we can clear it if needed
+        if (userCredits < 10 && userRole == 0) {
+            alert("Not enough credits to execute the problem. Cost: 10 credits.");
+        } else {
+            const isConfirmed = confirm(`The problem will cost 10 credits to execute. Are you sure you want to proceed?`);
+            if (isConfirmed) {
+                fetch('/updateCredits', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({creditsToAdd: -10})
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Transaction failed');
+                        }
+                        return response.json();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+
+
+                // Initiate the fetch request
+                const fetchPromise = fetch(`/runSolver/${problemId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    }
+                })
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('Solver run successfully:', data);
+                        location.reload();  // Reload the page after the solver completes
+                    })
+                    .catch(error => {
+                        console.error('Error running solver:', error);
+                        location.reload();  // Also reload on error to ensure consistency
+                    });
+
+            }}
+
+        // Set a timeout to reload the page if no response within 1 second
+        setTimeout(() => {
+            console.log('Response is taking too long, reloading...');
+            location.reload();
+        }, 1000); // Corrected timeout set for 1 second
+
+    }
+
+
+
+</script>
+</body>
+</html>

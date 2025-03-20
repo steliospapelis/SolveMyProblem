@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #f4f4f8;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 70px auto 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding-bottom: 80px;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #dedede;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .btn-center {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            padding: 10px 30px;
+            color: white;
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <h1 style="margin: 0;">SolveMyProblem</h1>
+    <div id="date-time"></div>
+</div>
+
+<div class="container">
+    <h2>Statistics</h2>
+    <div class="form-group">
+        <label for="filterDropdown">Filter by:</label>
+        <select id="filterDropdown" class="form-control">
+            <option value="today">Today</option>
+            <option value="this-week">This Week</option>
+            <option value="this-month">This Month</option>
+            <option value="lifetime">Lifetime</option>
+        </select>
+    </div>
+    <div id="stats" class="mt-4">
+        <p>Total time of executions: <span id="totalTime"></span> seconds</p>
+        <p>Number of solutions: <span id="solvedCount"></span></p>
+        <p>Number of problems currently uploaded: <span id="uploadedCount"></span></p>
+        <p>Average time per solution: <span id="avgtime"></span> seconds</p>
+    </div>
+    <canvas id="statsChart" class="mt-4"></canvas>
+</div>
+
+<div class="footer">
+    <p>© 2024 SolveMyProblem. All rights reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const token = '<%= token %>';
+    function updateTime() {
+        document.getElementById('date-time').textContent = new Date().toLocaleString();
+    }
+    setInterval(updateTime, 1000);
+
+    function fetchStats(filter) {
+
+
+        fetch(`/fetchStats?filter=${filter}`, {
+            method: 'GET', // Specify the method if necessary
+            headers: {
+                'Authorization': `Bearer ${token}`, // Add the Authorization header
+                'Content-Type': 'application/json' // Optional, depending on your API
+            }
+        })
+            .then(response => {
+                return response.text().then(text => {
+                    console.log("Raw Response Text:", text); // Log the raw response text
+                    return text ? JSON.parse(text) : {}; // Safely parse JSON or return an empty object
+                });
+            })
+            .then(data => {
+                console.log("Changing view");
+                document.getElementById('totalTime').textContent = (data.totalTimeExecuted ? data.totalTimeExecuted.toFixed(2) : 'N/A');
+                document.getElementById('solvedCount').textContent = data.totalExecutions || '0';
+                document.getElementById('uploadedCount').textContent = data.totalProblemsUploaded || '0';
+                document.getElementById('avgtime').textContent = (data.totalExecutions && data.totalTimeExecuted ? (data.totalTimeExecuted / data.totalExecutions).toFixed(2) : 'N/A');
+
+                updateChart(data.problemsPerModel);
+            })
+            .catch(error => console.error('Error fetching stats:', error));
+    }
+
+    function updateChart(problemsPerModel) {
+        const ctx = document.getElementById('statsChart').getContext('2d');
+        if (window.myChart) {
+            window.myChart.destroy();
+        }
+
+        window.myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: problemsPerModel.map(model => model.modelName),
+                datasets: [{
+                    label: 'Problems Currently Uploaded Per Model',
+                    data: problemsPerModel.map(model => model.count),
+                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                    borderColor: 'rgba(153, 102, 255, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterDropdown = document.getElementById('filterDropdown');
+        filterDropdown.addEventListener('change', function () {
+            fetchStats(this.value);
+        });
+
+        // Initial fetch with default filter
+        fetchStats(filterDropdown.value);
+    });
+</script>
+</body>
+
+</html>

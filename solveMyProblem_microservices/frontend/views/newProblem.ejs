@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Problem Submission</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure it takes at least the viewport height */
+            background: #f4f4f8;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000; /* Keeps it above other content */
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 70px auto 20px; /* Adjusted top margin to account for fixed header */
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding-bottom: 80px; /* Bottom padding to ensure content is not obscured by footer */
+        }
+        .footer {
+            width: 100%;
+            background-color: #dedede;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .form-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        input.form-control {
+            height: 40px;
+            padding: 5px 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        .btn-center {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn-primary {
+            padding: 10px 30px;
+            color: white;
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1 style="margin: 0;">SolveMyProblem</h1>
+    <div id="date-time"></div>
+</div>
+<div class="container">
+    <form id="problemForm">
+        <h2>Model Selection</h2>
+        <select id="modelDropdown" class="form-control" onchange="showDescription()">
+            <option value="">Please select a Model</option>
+            <!-- Options will be dynamically filled -->
+        </select>
+        <p id="modelDescription" class="mt-3"></p> <!-- Description appears here -->
+
+        <div id="parameterForm" class="form-container mt-3">
+            <!-- Parameter inputs will be dynamically filled here -->
+        </div>
+
+        <div class="btn-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+<div class="footer">
+    <p>© 2024 SolveMyProblem. All rights reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    const token = '<%= token %>';
+    function updateTime() {
+        document.getElementById('date-time').textContent = new Date().toLocaleString();
+    }
+    setInterval(updateTime, 1000); // Updates the time every second
+
+    window.onload = function() {
+        fetch('/models') // Adjust to match your actual endpoint URL
+            .then(response => response.json())
+            .then(models => {
+                const dropdown = document.getElementById('modelDropdown');
+                models.forEach(model => {
+                    const option = document.createElement('option');
+                    option.value = model.description; // Storing description in value
+                    option.textContent = model.modelName;
+                    option.setAttribute('data-model-id', model.modelId);
+                    dropdown.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error loading models:', error));
+    };
+
+    function showDescription() {
+        const dropdown = document.getElementById('modelDropdown');
+        const description = document.getElementById('modelDescription');
+        if (dropdown.selectedIndex > 0) {
+            description.textContent = dropdown.options[dropdown.selectedIndex].value;
+            const modelId = dropdown.options[dropdown.selectedIndex].getAttribute('data-model-id');
+            if (modelId) {
+                fetch(`/parameters/${modelId}`)
+                    .then(response => response.json())
+                    .then(parameters => createParameterForm(parameters))
+                    .catch(error => console.error('Error fetching parameters:', error));
+            }
+        } else {
+            description.textContent = '';
+            const formContainer = document.getElementById('parameterForm');
+            formContainer.innerHTML = ''; // Clear previous form
+        }
+    }
+
+    function createParameterForm(parameters) {
+        const formContainer = document.getElementById('parameterForm');
+        formContainer.innerHTML = ''; // Clear previous form
+        formContainer.classList.add('form-container');
+
+        // Add Problem Name input at the top
+        const nameInputContainer = document.createElement('div');
+        nameInputContainer.classList.add('form-group');
+
+        const nameLabel = document.createElement('label');
+        nameLabel.textContent = 'Problem Name';
+        nameLabel.htmlFor = 'problemName';
+
+        const nameInput = document.createElement('input');
+        nameInput.type = 'text';
+        nameInput.id = 'problemName';
+        nameInput.name = 'problemName';
+        nameInput.classList.add('form-control');
+        nameInput.required = true;
+
+        nameInputContainer.appendChild(nameLabel);
+        nameInputContainer.appendChild(nameInput);
+        formContainer.appendChild(nameInputContainer);
+
+        // Create inputs for each parameter
+        parameters.forEach(param => {
+            const inputContainer = document.createElement('div');
+            inputContainer.classList.add('form-group');
+
+            const label = document.createElement('label');
+            label.textContent = param.parameterName;
+            label.htmlFor = param.parameterName;
+
+            const input = document.createElement('input');
+            input.type = param.parameterType; // Assuming all types are text for simplicity, adjust as needed
+            input.id = param.parameterId;
+            input.name = param.parameterName;
+            input.classList.add('form-control');
+            input.classList.add('parameter-input'); // Added class for easy selection
+            input.setAttribute('data-parameter-id', param.parameterId); // Set data attribute
+            input.required = param.isRequired;
+
+
+            if (input.type === 'file') {
+                input.accept = '.json';
+            }
+
+            inputContainer.appendChild(label);
+            inputContainer.appendChild(input);
+            formContainer.appendChild(inputContainer);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('problemForm');
+        form.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            console.log("Form submission triggered");
+
+            const problemName = document.getElementById('problemName').value;
+            const modelDropdown = document.getElementById('modelDropdown');
+            const modelId = modelDropdown.options[modelDropdown.selectedIndex].getAttribute('data-model-id');
+
+            // Gather parameters asynchronously, handling file inputs
+            const parameterPromises = Array.from(document.querySelectorAll('.parameter-input')).map(async input => {
+                if (input.type === 'file' && input.files.length > 0) {
+                    const file = input.files[0];
+                    if (file.type === "application/json") {
+                        const value = await readFileAsText(file);
+                        return {
+                            parameterId: input.getAttribute('data-parameter-id'),
+                            value: value
+                        };
+                    } else {
+                        console.error('Invalid file type. Please upload a JSON file for parameter:', input.name);
+                        return {
+                            parameterId: input.getAttribute('data-parameter-id'),
+                            value: ''
+                        };
+                    }
+
+                } else if (input.type === 'text') {
+                    return {
+                        parameterId: input.getAttribute('data-parameter-id'),
+                        value: `"${input.value}"`
+                    };
+                } else {
+                    return {
+                        parameterId: input.getAttribute('data-parameter-id'),
+                        value: input.value
+                    };
+                }
+            });
+
+            // Wait for all file reads to complete
+            const parameters = await Promise.all(parameterPromises);
+
+            // Fetch request to send data
+            fetch('/newProblem', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({
+                    problemName,
+                    problemTypeId: modelId,
+                    parameters
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+
+                    console.log('Problem created:', data);
+                })
+                .catch(error => console.error('Error creating problem:', error));
+            window.location.href = '/home';
+
+        });
+
+        // Helper function to read file as text
+        function readFileAsText(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = () => reject(reader.error);
+                reader.readAsText(file);
+            });
+        }
+    });
+
+
+
+</script>
+</body>
+</html>
